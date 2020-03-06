@@ -1,4 +1,41 @@
 .footer {
-    background-color: #7a0002;
-    height: 50vh;
+    background-color: #a8612d;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.footer .container{
+    width: 75%;
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .container span {
+    background-color: #979797;
+}
+
+.footer .container .iconBlock {
+    width:400px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+}
+
+.footer .container .iconBlock img{
+    width:55px;
+    height: 55px;
+    background-color: #979797;
+}
+
+
+
+
+
+

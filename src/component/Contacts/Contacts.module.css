@@ -1,4 +1,50 @@
 .contacts {
     background-color: #6dffb3;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.contacts .container {
+    width:75%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+}
+
+.contacts .container .contactsHeader{
+    background-color: #979797;
+    min-width: 100px;
+}
+
+.contacts .container .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 400px;
+    min-height: 200px;
+    border: 1px solid;
+}
+
+.contacts .container .form .inputs{
+    background-color: #979797;
+    height:20px;
+}
+
+.contacts .container .form .textArea{
+    background-color: #979797;
+    height:120px;
+}
+
+.contacts .container .submitBtn{
+    background-color: #636363;
+    min-height: 40px;
+    min-width: 150px;
+}
+
+
+

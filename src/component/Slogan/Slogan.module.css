@@ -1,4 +1,31 @@
 .slogan {
     background-color: #b9649b;
-    height: 50vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan .container {
+    width: 75%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+}
+
+.slogan .container .sloganText {
+    font-size: 22px;
+    background-color: #979797;
+}
+
+.slogan .container .hireMeBtn {
+    background-color: #535353;
+    width: 150px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
