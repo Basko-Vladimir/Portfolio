@@ -1,0 +1,67 @@
+.projectsItem{
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid;
+}
+
+.projectsItem .photoProject{
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #979797;
+    border: 1px solid;
+}
+
+.projectsItem .photoProject .projectShowBtn{
+    height:50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #535353;
+    border: 1px solid;
+}
+
+.projectsItem .projectDescription{
+    min-height:110px;
+    background-color: #d2d2d2;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+}
+
+.projectsItem .projectDescription .descriptionBlock{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid;
+}
+
+.projectsItem .projectDescription .descriptionBlock .projectName{
+    min-height: 30px;
+    background-color: #b9b9b9;
+    text-align: left;
+}
+
+.projectsItem .projectDescription .descriptionBlock .aboutProject{
+    width:100%;
+    min-height: 70px;
+    background-color: #b9b9b9;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+

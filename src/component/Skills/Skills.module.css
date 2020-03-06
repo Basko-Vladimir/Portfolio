@@ -1,4 +1,28 @@
 .skills {
     background-color: #f1ff38;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.skills .container{
+    width: 75%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills .container .skillsHeader{
+    height: 150px;
+}
+
+.skills .container .skillsBlock{
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+}
+

@@ -1,0 +1,19 @@
+.skillItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+}
+
+.skillItem img{
+    width:80px;
+    height: 80px;
+    background-color: #979797;
+}
+
+.skillItem .descriptionSkill{
+    min-height: 150px;
+    width: 200px;
+    border: 1px solid;
+}

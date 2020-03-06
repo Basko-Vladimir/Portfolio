@@ -1,0 +1,10 @@
+.navMenu {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navMenu .link {
+    text-decoration: none;
+    color:white;
+}
