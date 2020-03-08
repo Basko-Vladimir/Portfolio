@@ -17,12 +17,33 @@
 
 .skills .container .skillsHeader{
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
+
+.skills .container .skillsHeader span{
+    background-color: #979797;
+}
+
 
 .skills .container .skillsBlock{
     height: 350px;
     display: flex;
     justify-content: space-between;
     border: 1px solid;
+}
+
+@media screen and (max-width: 650px){
+    .skills {
+        height: auto;
+    }
+    .skills .container{
+        width: 100%;
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 

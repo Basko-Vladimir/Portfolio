@@ -6,11 +6,13 @@ const Skills = () => {
     return (
         <div className={styles.skills}>
             <div className={styles.container}>
-                <span className={styles.skillsHeader}>Скиллы</span>
+                <div  className={styles.skillsHeader}>
+                    <span>Скиллы</span>
+                </div>
                 <div className={styles.skillsBlock}>
-                    <SkillItem />
-                    <SkillItem />
-                    <SkillItem />
+                    <SkillItem/>
+                    <SkillItem/>
+                    <SkillItem/>
                 </div>
             </div>
         </div>

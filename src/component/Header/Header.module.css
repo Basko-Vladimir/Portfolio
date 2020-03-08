@@ -12,3 +12,11 @@
     align-items: center;
     border:1px solid;
 }
+
+@media screen and ( max-width: 650px) {
+    .header .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}

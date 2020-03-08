@@ -18,9 +18,28 @@
     flex-direction: column;
 }
 
-
 .mainInfo .container .photo{
     width: 300px;
     height: 400px;
     background-color: #979797;
+}
+
+@media screen and (max-width:650px) {
+    .mainInfo {
+        height: auto;
+    }
+
+    .mainInfo .container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        padding-bottom: 70px;
+    }
+
+    .mainInfo .container .greeting {
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
 }

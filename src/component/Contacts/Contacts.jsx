@@ -6,10 +6,10 @@ const Contacts = () => {
         <div className={styles.contacts}>
             <div className={styles.container}>
                 <span className={styles.contactsHeader}>Контакты</span>
-                <form className={styles.form}>
-                    <input type='text' className={styles.inputs}/>
-                    <input type='text' className={styles.inputs}/>
-                    <textarea className={styles.textArea}>какой-то текст...</textarea>
+                <form  className={styles.form}>
+                    <input type='text' className={styles.inputs} />
+                    <input type='text' className={styles.inputs} />
+                    <textarea className={styles.textArea} defaultValue='какой-то текст...'></textarea>
                 </form>
                 <input type='submit' value='Отправить' className={styles.submitBtn}/>
             </div>
