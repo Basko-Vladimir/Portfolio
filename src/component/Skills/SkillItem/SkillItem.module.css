@@ -7,13 +7,45 @@
 }
 
 .skillItem img{
-    width:80px;
-    height: 80px;
+    width:100px;
+    height: 100px;
     background-color: #979797;
 }
 
+.skillItem span{
+    font-weight: bolder;
+    font-size: 24px;
+}
+
 .skillItem .descriptionSkill{
-    min-height: 150px;
-    width: 200px;
+    min-height: 200px;
+    width: 300px;
     border: 1px solid;
+}
+
+@media screen and (max-width: 850px){
+    .skillItem{
+        display: flex;
+        height: 380px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .skillItem img{
+        width:80px;
+        height: 80px;
+        background-color: #979797;
+    }
+
+    .skillItem span{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .skillItem .descriptionSkill{
+        min-height: 180px;
+        border: 1px solid;
+    }
 }

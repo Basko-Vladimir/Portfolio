@@ -7,7 +7,7 @@ const Skills = () => {
         <div className={styles.skills}>
             <div className={styles.container}>
                 <div  className={styles.skillsHeader}>
-                    <span>Скиллы</span>
+                    <span>Мои скиллы</span>
                 </div>
                 <div className={styles.skillsBlock}>
                     <SkillItem/>

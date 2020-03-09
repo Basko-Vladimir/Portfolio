@@ -24,7 +24,7 @@
     background-color: #979797;
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:850px) {
     .mainInfo {
         height: auto;
     }

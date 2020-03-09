@@ -13,7 +13,7 @@
     border:1px solid;
 }
 
-@media screen and ( max-width: 650px) {
+@media screen and ( max-width: 850px) {
     .header .container{
         width: 100%;
         display: flex;
