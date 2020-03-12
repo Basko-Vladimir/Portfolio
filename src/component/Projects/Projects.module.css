@@ -8,6 +8,7 @@
 
 .projects .container{
     width: 75%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,11 +16,58 @@
 }
 
 .projects .container .projectsHeader{
-    height: 200px;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.projects .container .projectsHeader span{
+    background-color: #979797;
+    font-weight: bolder;
+    font-size: 24px;
+    padding: 0 10px;
 }
 
 .projects .container .projectsBlock{
+    height: 70%;
     display: flex;
     justify-content: space-between;
     border: 1px solid;
 }
+
+@media screen and (max-width: 1250px) and (min-width: 851px){
+    .projects .container {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+    .projects {
+        height: auto;
+    }
+
+    .projects .container{
+        margin-top: 70px;
+        margin-bottom: 110px;
+        width: 100%;
+    }
+
+    .projects .container .projectsHeader span{
+        padding: 0 10px;
+        font-size: 22px;
+    }
+
+    .projects .container .projectsBlock{
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 1px solid;
+    }
+
+
+
+}
+

@@ -19,6 +19,8 @@
 .slogan .container .sloganText {
     font-size: 22px;
     background-color: #979797;
+    font-weight: bolder;
+    padding: 0 10px;
 }
 
 .slogan .container .hireMeBtn {
@@ -28,4 +30,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid;
 }
+.slogan .container .hireMeBtn span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 850px){
+    .slogan {
+        height: 400px;
+    }
+
+    .slogan .container {
+        width: 60%;
+        height: 50%;
+    }
+
+    .slogan .container .sloganText {
+        background-color: transparent;
+    }
+
+}
+

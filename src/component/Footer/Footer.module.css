@@ -19,6 +19,12 @@
 
 .footer .container span {
     background-color: #979797;
+    font-weight: bolder;
+}
+
+.footer .container span:first-child {
+    font-size: 22px;
+    padding: 0 10px;
 }
 
 .footer .container .iconBlock {
@@ -32,6 +38,23 @@
     width:55px;
     height: 55px;
     background-color: #979797;
+}
+
+
+@media screen and (max-width: 850px){
+    .footer .container {
+        width: 100%;
+    }
+
+    .footer .container .iconBlock {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .footer .container .iconBlock {
+        width: 75%;
+    }
 }
 
 

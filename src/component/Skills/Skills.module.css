@@ -9,7 +9,7 @@
 
 .skills .container{
     width: 75%;
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,8 +56,6 @@
     .skills .container .skillsHeader{
         height: auto;
         padding: 70px 0;
-        font-size: 20px;
-        font-weight: bolder;
     }
 
     .skills .container .skillsHeader span{
@@ -67,7 +65,7 @@
     }
 
     .skills .container .skillsBlock{
-        height: 1200px;
+        height: 1250px;
         display: flex;
         flex-direction: column;
         align-items: center;

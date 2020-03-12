@@ -6,7 +6,9 @@ const Projects = () => {
     return (
         <div className={styles.projects}>
             <div className={styles.container}>
-                <span className={styles.projectsHeader}>Мои проекты</span>
+                <div className={styles.projectsHeader}>
+                    <span>Мои проекты</span>
+                </div>
                 <div className={styles.projectsBlock}>
                     <ProjectItem />
                     <ProjectItem />
