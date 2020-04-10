@@ -1,5 +1,5 @@
 .navMenu {
-    width: 450px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
 }
@@ -7,6 +7,13 @@
 .navMenu .link {
     text-decoration: none;
     color:white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.navMenu .link:hover {
+    color:#979797;
 }
 
 @media screen and ( max-width: 850px) {

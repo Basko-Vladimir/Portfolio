@@ -1,18 +1,31 @@
 import React from "react";
 import styles from "./MainInfo.module.css";
+import flower from "../../images/flower.png";
+import tablet from "../../images/tablet.png";
+import pen from "../../images/pen.png";
+import papers from "../../images/papers.png";
+import red_marker from "../../images/red_marker.png";
+import black_marker from "../../images/black_marker.png";
+import paperclip from "../../images/paperclip.png";
 
 const MainInfo = () => {
     return (
         <div className={styles.mainInfo}>
+            <img src={flower} alt='flower' className={styles.flower}/>
+            <img src={tablet} alt='tablet' className={styles.tablet}/>
+            <img src={pen} alt='pen' className={styles.pen}/>
+            <img src={papers} alt='papers' className={styles.papers}/>
+            <img src={red_marker} alt='red_marker' className={styles.red_marker}/>
+            <img src={black_marker} alt='black_marker' className={styles.black_marker}/>
+            <img src={paperclip} alt='paperclip' className={styles.paperclip_1}/>
+            <img src={paperclip} alt='paperclip' className={styles.paperclip_2}/>
             <div className={styles.container}>
                 <div className={styles.greeting}>
-                    <span>Привет!</span>
-                    <span>Меня зовут Басько Владимир</span>
-                    <span>Я front-end разработчик</span>
+                    <div>Привет!</div>
+                    <div>Я Басько Владимир</div>
+                    <h1>Я front-end разработчик</h1>
                 </div>
-                <div className={styles.photo}>
-                    <img src="#" alt="photo"/>
-                </div>
+                <div className={styles.photo}> </div>
             </div>
         </div>
     )

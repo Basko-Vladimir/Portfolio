@@ -1,27 +1,108 @@
 .mainInfo {
-    background-color: #ff8594;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    background-color: #DFDFDF;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mainInfo img{
+    position: absolute;
+    z-index: 2;
+}
+.mainInfo .flower {
+    right: 50px;
+    top: -130px;
+}
+.mainInfo .tablet {
+    right: -350px;
+    bottom: -140px;
+}
+.mainInfo .pen {
+    right: 250px;
+    bottom: 0;
+}
+.mainInfo .papers {
+    left: -350px;
+    bottom: -400px;
+}
+.mainInfo .red_marker {
+    left: 200px;
+    bottom: -100px;
+}
+.mainInfo .black_marker {
+    left: 140px;
+    bottom: 180px;
+}
+.mainInfo .paperclip_1 {
+    left: 600px;
+    bottom: 200px;
+}
+.mainInfo .paperclip_2 {
+    left: 660px;
+    bottom: 170px;
+    transform: rotate(55deg);
 }
 
 .mainInfo .container {
-    width:75%;
-    border: 1px solid;
+    max-width:60%;
     display: flex;
-    justify-content: space-evenly;
+    margin-left: 250px;
+    justify-content: space-between;
     align-items: center;
 }
 
 .mainInfo .container .greeting{
-    display: flex;
-    flex-direction: column;
+    color: #232323;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+.mainInfo .container .greeting div:nth-child(2){
+    font-size: 2em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.mainInfo .container .greeting div:nth-child(2):after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:370px;
+    height: 20px;
+    background-color: #FF214F;
+    z-index: -1;
+}
+
+.mainInfo .container .greeting h1{
+    margin:0;
+    font-size: 1.5em;
 }
 
 .mainInfo .container .photo{
     width: 300px;
     height: 400px;
-    background-color: #979797;
+    background-color: #000000;
+    align-self: start;
+    margin-top: 10%;
+    position: relative;
+    z-index: 5;
+}
+
+.mainInfo .container .photo:after{
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: -17px;
+    width: 290px;
+    height: 420px;
+    border: 7px solid #FF214F;
+    z-index:-1;
 }
 
 @media screen and (max-width:850px) {
