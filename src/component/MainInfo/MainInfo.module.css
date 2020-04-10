@@ -12,8 +12,9 @@
     z-index: 2;
 }
 .mainInfo .flower {
-    right: 50px;
-    top: -130px;
+    right: -150px;
+    top: 60px;
+    transform: rotate(230deg);
 }
 .mainInfo .tablet {
     right: -350px;
@@ -90,8 +91,8 @@
     background-color: #000000;
     align-self: start;
     margin-top: 10%;
+    display: block;
     position: relative;
-    z-index: 5;
 }
 
 .mainInfo .container .photo:after{

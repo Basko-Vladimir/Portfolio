@@ -1,28 +1,29 @@
 .skillItem{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border: 1px solid;
-    width: 27%;
-    background: #ffffff;
+    width: 120px;
+    height: 120px;
+    padding:10px;
+    color:#AEAEAE;
 }
 
+.skillItem:hover {
+    background-color:#FF214F;
+    color: white;
+}
+
+
 .skillItem img{
-    width:100px;
-    height: 100px;
-    background-color: #979797;
+    width:60px;
+    margin-bottom: 20px;
 }
 
 .skillItem span{
-    font-weight: bolder;
-    font-size: 24px;
-}
-
-.skillItem .descriptionSkill{
-    height: 50%;
-    width: 75%;
-    border: 1px solid;
+    font-weight: 500;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2em;
 }
 
 @media screen and (max-width: 850px){
