@@ -1,9 +1,23 @@
+.headerBlock {
+    margin-bottom: 50px;
+}
 
 .headerBlock span{
     font-family: Montserrat, sans-serif;
-    color: #FF214F;
-    font-size: 2em;
-    font-weight: 700;
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: 600;
     padding: 0 10px;
-    text-transform: uppercase ;
+    position: relative;
+}
+
+.headerBlock span::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 2.5%;
+    height: 10px;
+    width: 95%;
+    background-color: #FF214F;
+    z-index: -1;
 }

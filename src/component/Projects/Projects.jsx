@@ -1,17 +1,19 @@
 import React from "react";
 import styles from "./Projects.module.css";
 import ProjectItem from "./ProjectItem/ProjectItem";
+import HeaderBlock from "../HeaderBlock/HeaderBlock";
+import socNet from "../../images/socialNetwork.png";
+import counter from "../../images/Counter.png";
 
 const Projects = () => {
     return (
         <div className={styles.projects}>
             <div className={styles.container}>
-                <div className={styles.projectsHeader}>
-                    <span>Мои проекты</span>
-                </div>
+                <HeaderBlock headerName={'My projects'}/>
                 <div className={styles.projectsBlock}>
-                    <ProjectItem />
-                    <ProjectItem />
+                    <ProjectItem link={socNet} projectName={'Social Network'}/>
+                    <ProjectItem link={counter} projectName={'Counter'}/>
+                    <ProjectItem link={counter} projectName={'TodoList'}/>
                 </div>
             </div>
         </div>

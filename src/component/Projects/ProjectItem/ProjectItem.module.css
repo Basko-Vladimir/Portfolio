@@ -1,60 +1,53 @@
 .projectsItem{
-    width: 40%;
+    width: 27%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border: 1px solid;
 }
 
-.projectsItem .photoProject{
-    height:75%;
+.projectsItem .wrapPhoto{
+    position: relative;
+}
+
+.projectsItem .wrapPhoto .photoProject{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #979797;
-    border: 1px solid;
-}
-
-.projectsItem .photoProject .projectShowBtn{
-    height:40px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #535353;
-    border: 1px solid;
-    font-size: 20px;
-    font-weight: bolder;
 }
 
 .projectsItem .projectDescription{
-    height:25%;
-    background-color: #d2d2d2;
     display: flex;
-    justify-content: center;
-    padding:10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+    position: relative;
+}
+
+.projectsItem .projectDescription:before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width:20px;
+    height: 3px;
+    background-color: #FF214F;
 }
 
 .projectsItem .projectDescription .descriptionBlock{
-    width:80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    border: 1px solid;
+    width:90%;
 }
 
 .projectsItem .projectDescription .descriptionBlock .projectName{
-    height: 25%;
-    background-color: #b9b9b9;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #232323;
     text-align: left;
     margin-bottom: 5px;
 }
 
 .projectsItem .projectDescription .descriptionBlock .aboutProject{
-    width:100%;
-    height: 75%;
-    background-color: #b9b9b9;
+    font-size: 14px;
     text-align: left;
 }
 
