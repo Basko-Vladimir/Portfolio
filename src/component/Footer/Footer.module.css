@@ -1,6 +1,6 @@
 .footer {
     background-color: #141414;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,37 +9,38 @@
 
 .footer .container{
     width: 75%;
-    height: 200px;
-    border: 1px solid;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer .container span {
-    background-color: #979797;
-    font-weight: bolder;
+.footer .container .copyRights{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #AEAEAE;
 }
 
-.footer .container span:first-child {
-    font-size: 22px;
-    padding: 0 10px;
+.footer .container div{
+    margin-bottom: 0;
+    color: white;
+}
+.footer .container div span{
+    font-weight: 500;
 }
 
 .footer .container .iconBlock {
     width:400px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid;
 }
 
 .footer .container .iconBlock img{
-    width:55px;
-    height: 55px;
-    background-color: #979797;
+    width:50px;
+    height: 50px;
+    cursor: pointer;
 }
-
 
 @media screen and (max-width: 850px){
     .footer .container {
@@ -56,9 +57,4 @@
         width: 75%;
     }
 }
-
-
-
-
-
 

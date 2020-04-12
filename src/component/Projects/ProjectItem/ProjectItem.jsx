@@ -6,7 +6,7 @@ const ProjectItem = (props) => {
     return (
         <div className={styles.projectsItem}>
             <div className={styles.wrapPhoto}>
-                <img src={props.link} alt="Social Network" className={styles.photoProject}/>
+                <img src={props.link} alt={props.projectName} className={styles.photoProject}/>
                 <div className={styles.btnWrap}>
                     <Button btnName={'See'}/>
                 </div>
