@@ -16,6 +16,19 @@
     align-items: center;
 }
 
+.projectsItem .wrapPhoto .btnWrap {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 75px);
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.projectsItem .wrapPhoto .btnWrap:hover {
+    opacity: 1;
+}
+
+
 .projectsItem .projectDescription{
     display: flex;
     justify-content: flex-end;

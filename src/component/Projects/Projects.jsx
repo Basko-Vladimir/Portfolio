@@ -4,6 +4,7 @@ import ProjectItem from "./ProjectItem/ProjectItem";
 import HeaderBlock from "../HeaderBlock/HeaderBlock";
 import socNet from "../../images/socialNetwork.png";
 import counter from "../../images/Counter.png";
+import portfolio from "../../images/portfolio.png";
 
 const Projects = () => {
     return (
@@ -13,7 +14,7 @@ const Projects = () => {
                 <div className={styles.projectsBlock}>
                     <ProjectItem link={socNet} projectName={'Social Network'}/>
                     <ProjectItem link={counter} projectName={'Counter'}/>
-                    <ProjectItem link={counter} projectName={'TodoList'}/>
+                    <ProjectItem link={portfolio} projectName={'Portfolio'}/>
                 </div>
             </div>
         </div>

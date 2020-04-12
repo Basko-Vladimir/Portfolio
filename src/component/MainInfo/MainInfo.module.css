@@ -12,16 +12,16 @@
     z-index: 2;
 }
 .mainInfo .flower {
-    right: -150px;
-    top: 60px;
+    right: -175px;
+    top: 100px;
     transform: rotate(230deg);
 }
 .mainInfo .tablet {
-    right: -350px;
-    bottom: -140px;
+    right: -250px;
+    bottom: -100px;
 }
 .mainInfo .pen {
-    right: 250px;
+    right: 360px;
     bottom: 0;
 }
 .mainInfo .papers {
@@ -86,9 +86,10 @@
 }
 
 .mainInfo .container .photo{
+    background-image: url("../../images/I.jpg");
+    background-size: cover;
     width: 300px;
     height: 400px;
-    background-color: #000000;
     align-self: start;
     margin-top: 10%;
     display: block;

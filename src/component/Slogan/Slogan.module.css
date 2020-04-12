@@ -1,5 +1,5 @@
 .slogan {
-    background-color: #b9649b;
+    /*background-image: url('http://wpdemos.themezaa.com/pofo/wp-content/uploads/2017/06/testimonial-bg.png');*/
     height: 30vh;
     display: flex;
     justify-content: center;
@@ -7,34 +7,20 @@
 }
 
 .slogan .container {
-    width: 75%;
-    height: 150px;
+    width:40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border: 1px solid;
 }
 
 .slogan .container .sloganText {
-    font-size: 22px;
-    background-color: #979797;
-    font-weight: bolder;
-    padding: 0 10px;
-}
-
-.slogan .container .hireMeBtn {
-    background-color: #535353;
-    width: 150px;
-    height:40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid;
-}
-.slogan .container .hireMeBtn span{
-    font-size: 20px;
-    font-weight: bolder;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: #232323;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 850px){
