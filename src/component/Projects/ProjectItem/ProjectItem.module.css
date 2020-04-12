@@ -28,7 +28,6 @@
     opacity: 1;
 }
 
-
 .projectsItem .projectDescription{
     display: flex;
     justify-content: flex-end;
@@ -62,6 +61,7 @@
 .projectsItem .projectDescription .descriptionBlock .aboutProject{
     font-size: 14px;
     text-align: left;
+    color: #6f6f6f;
 }
 
 @media screen and (max-width: 850px){

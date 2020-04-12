@@ -1,0 +1,18 @@
+.infoItem{
+    margin-top: 40px;
+    padding-left: 10px;
+}
+
+.infoItem h3{
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.infoItem p {
+    color: #aeaeae;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}

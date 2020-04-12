@@ -9,51 +9,68 @@
 
 .contacts .container {
     width:75%;
-    height: 65%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid;
+    justify-content: space-evenly;
+    padding: 15%;
 }
 
-.contacts .container .contactsHeader{
-    background-color: #979797;
+.contacts .container .contactsBlock {
+    width:30%;
+    text-align: left;
 }
 
-.contacts .container .contactsHeader span {
-    background-color: #979797;
-    font-weight: bolder;
-    font-size: 24px;
-    padding: 0 10px;
+.contacts .container .contactsBlock .headerBlockWrap {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 60px;
 }
 
-.contacts .container .form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.contacts .container .formBlock{
     width: 50%;
-    height: 35%;
-    border: 1px solid;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.contacts .container .form {
+    width: 500px;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    opacity: 0.8;
+
+}
+
+.contacts .container .form .inputs,
+.contacts .container .form .textArea{
+    width: 350px;
+    background-color: #000000;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
 }
 
 .contacts .container .form .inputs{
-    background-color: #979797;
-    height:12%;
+    height:20px;
 }
 
 .contacts .container .form .textArea{
-    background-color: #979797;
-    height:60%;
+    height: 100px;
+    resize: none;
 }
 
-.contacts .container .submitBtn{
-    background-color: #636363;
-    height: 40px;
-    width: 150px;
-    font-weight: bolder;
-    font-size: 20px;
+.contacts .container .form .btnWrap{
+    margin: 50px;
 }
+
 
 @media screen and (max-width: 850px){
     .contacts {
