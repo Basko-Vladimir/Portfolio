@@ -2,11 +2,12 @@ import React from "react";
 import styles from "./Header.module.css";
 import NavMenu from "./NavMenu/NavMenu";
 
-const Header = () => {
+const Header = (props) => {
+    let classHeader = props.isScrollPage ? `${styles.header} ${styles.headerBlack}` : styles.header;
     return (
-        <div className={styles.header}>
+        <div className={classHeader}>
             <div className={styles.container}>
-               <NavMenu/>
+               <NavMenu {...props}/>
             </div>
         </div>
     )

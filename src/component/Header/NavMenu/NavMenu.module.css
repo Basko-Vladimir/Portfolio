@@ -6,10 +6,14 @@
 
 .navMenu .link {
     text-decoration: none;
-    color:#ffffff;
+    color:#232323;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     font-size: 13px;
+}
+
+.navMenu .linkBlack {
+    color: #ffffff;
 }
 
 .navMenu .link:hover {

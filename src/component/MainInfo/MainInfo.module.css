@@ -1,128 +1,124 @@
-.mainInfo {
-    background-color: #DFDFDF;
-    background-size: cover;
-    height: 90vh;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+.mainInfo
+{
+    position: relative;  z-index: 1;  overflow: hidden;     height: calc(100vh - 70px);
+
+    background-color: #dfdfdf;  background-size: cover;
 }
 
-.mainInfo img{
-    position: absolute;
-    z-index: 2;
+.mainInfoScroll
+{
+    padding-top: 170px;
 }
-.mainInfo .flower {
-    right: -175px;
+
+.mainInfo img
+{
+    position: absolute;  z-index: 2;
+}
+.mainInfo .flower
+{
     top: 100px;
-    transform: rotate(230deg);
+    right: -175px;  transform: rotate(230deg);
 }
-.mainInfo .tablet {
-    right: -250px;
-    bottom: -100px;
+
+.mainInfo .flowerScroll
+{
+    top: 270px;
 }
-.mainInfo .pen {
-    right: 360px;
-    bottom: 0;
+
+.mainInfo .tablet
+{
+    right: -250px;  bottom: -100px;
 }
-.mainInfo .papers {
-    left: -350px;
-    bottom: -400px;
+.mainInfo .pen
+{
+    right: 360px;  bottom: 0;
 }
-.mainInfo .red_marker {
-    left: 200px;
-    bottom: -100px;
+.mainInfo .papers
+{
+    bottom: -400px;  left: -350px;
 }
-.mainInfo .black_marker {
-    left: 140px;
-    bottom: 180px;
+.mainInfo .red_marker
+{
+    bottom: -100px;  left: 200px;
 }
-.mainInfo .paperclip_1 {
-    left: 600px;
-    bottom: 200px;
+.mainInfo .black_marker
+{
+    bottom: 180px;  left: 140px;
 }
-.mainInfo .paperclip_2 {
-    left: 660px;
+.mainInfo .paperclip_1
+{
+    bottom: 200px;  left: 600px;
+}
+.mainInfo .paperclip_2
+{
     bottom: 170px;
-    transform: rotate(55deg);
+    left: 660px;  transform: rotate(55deg);
 }
 
-.mainInfo .container {
-    max-width:60%;
-    display: flex;
-    margin-left: 250px;
-    justify-content: space-between;
-    align-items: center;
+.mainInfo .container
+{
+    display: flex;  align-items: center;     justify-content: space-between;
+
+    max-width: 60%;  margin-left: 250px;
 }
 
-.mainInfo .container .greeting{
+.mainInfo .container .greeting
+{
+    font-size: 1.2em;     line-height: 1.6;  text-align: left;
+
     color: #232323;
-    text-align: left;
-    line-height: 1.6;
-    font-size: 1.2em;
 }
 
-.mainInfo .container .greeting div:nth-child(2){
-    font-size: 2em;
+.mainInfo .container .greeting div:nth-child(2)
+{
     font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    position: relative;
-    z-index: 1;
+    font-size: 2em;  font-weight: 600;  position: relative;  z-index: 1;
 }
 
-.mainInfo .container .greeting div:nth-child(2):after{
-    content: '';
-    position: absolute;
-    bottom:0;
-    right:0;
-    width:370px;
-    height: 20px;
-    background-color: #FF214F;
-    z-index: -1;
+.mainInfo .container .greeting div:nth-child(2):after
+{
+    position: absolute;  z-index: -1;     right: 0;  bottom: 0;  width: 370px;  height: 20px;
+
+    content: '';  background-color: #ff214f;
 }
 
-.mainInfo .container .greeting h1{
-    margin:0;
-    font-size: 1.5em;
+.mainInfo .container .greeting h1
+{
+    font-size: 1.5em;  margin: 0;
 }
 
-.mainInfo .container .photo{
-    background-image: url("../../images/I.jpg");
-    background-size: cover;
-    width: 300px;
-    height: 400px;
-    align-self: start;
-    margin-top: 10%;
-    display: block;
-    position: relative;
+.mainInfo .container .photo
+{
+    position: relative;     display: block;  align-self: start;  width: 300px;  height: 400px;  margin-top: 10%;
+
+    background-image: url('../../images/I.jpg');  background-size: cover;
 }
 
-.mainInfo .container .photo:after{
-    content: '';
-    position: absolute;
-    left: 15px;
-    top: -17px;
-    width: 290px;
-    height: 420px;
-    border: 7px solid #FF214F;
-    z-index:-1;
+.mainInfo .container .photo:after
+{
+    position: absolute;  z-index: -1;     top: -17px;  left: 15px;  width: 290px;  height: 420px;
+
+    content: '';  border: 7px solid #ff214f;
 }
 
-@media screen and (max-width:850px) {
-    .mainInfo {
+@media screen and (max-width:850px)
+{
+    .mainInfo
+    {
         height: auto;
     }
 
-    .mainInfo .container {
-        width: 100%;
-        flex-direction: column;
-        justify-content: start;
-        padding-bottom: 70px;
+    .mainInfo .container
+    {
+        flex-direction: column;  justify-content: start;
+
+        width: 100%;  padding-bottom: 70px;
     }
 
-    .mainInfo .container .greeting {
+    .mainInfo .container .greeting
+    {
+        font-size: 20px;  font-weight: bolder;         margin-bottom: 30px;
+
         text-align: left;
-        margin-bottom: 30px;
-        font-size: 20px;
-        font-weight: bolder;
     }
 }

@@ -8,10 +8,12 @@ import red_marker from "../../images/red_marker.png";
 import black_marker from "../../images/black_marker.png";
 import paperclip from "../../images/paperclip.png";
 
-const MainInfo = () => {
+const MainInfo = (props) => {
+    let classMainInfo = props.isScrollPage ? `${styles.mainInfo} ${styles.mainInfoScroll}` : styles.mainInfo;
+    let classFlower = props.isScrollPage ? `${styles.flower} ${styles.flowerScroll}` : styles.flower;
     return (
-        <div className={styles.mainInfo}>
-            <img src={flower} alt='flower' className={styles.flower}/>
+        <div className={classMainInfo} >
+            <img src={flower} alt='flower' className={classFlower}/>
             <img src={tablet} alt='tablet' className={styles.tablet}/>
             <img src={pen} alt='pen' className={styles.pen}/>
             <img src={papers} alt='papers' className={styles.papers}/>
