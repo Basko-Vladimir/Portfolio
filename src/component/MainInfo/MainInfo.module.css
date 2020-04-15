@@ -1,124 +1,269 @@
-.mainInfo
-{
-    position: relative;  z-index: 1;  overflow: hidden;     height: calc(100vh - 70px);
-
-    background-color: #dfdfdf;  background-size: cover;
+.mainInfo {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: calc(100vh - 70px);
+    background-color: #dfdfdf;
+    background-size: cover;
 }
 
-.mainInfoScroll
-{
+.mainInfoScroll {
     padding-top: 170px;
 }
 
-.mainInfo img
-{
-    position: absolute;  z-index: 2;
-}
-.mainInfo .flower
-{
-    top: 100px;
-    right: -175px;  transform: rotate(230deg);
+.mainInfo img {
+    position: absolute;
+    z-index: 2;
 }
 
-.mainInfo .flowerScroll
-{
+.mainInfo .flower {
+    top: 100px;
+    right: -175px;
+    transform: rotate(230deg);
+}
+
+.mainInfo .flowerScroll {
     top: 270px;
 }
 
-.mainInfo .tablet
-{
-    right: -250px;  bottom: -100px;
+.mainInfo .tablet {
+    right: -250px;
+    bottom: -100px;
 }
-.mainInfo .pen
-{
-    right: 360px;  bottom: 0;
+
+.mainInfo .pen {
+    right: 360px;
+    bottom: 0;
 }
-.mainInfo .papers
-{
-    bottom: -400px;  left: -350px;
+
+.mainInfo .papers {
+    bottom: -400px;
+    left: -350px;
 }
-.mainInfo .red_marker
-{
-    bottom: -100px;  left: 200px;
+
+.mainInfo .red_marker {
+    bottom: -100px;
+    left: 200px;
 }
-.mainInfo .black_marker
-{
-    bottom: 180px;  left: 140px;
+
+.mainInfo .black_marker {
+    bottom: 180px;
+    left: 140px;
 }
-.mainInfo .paperclip_1
-{
-    bottom: 200px;  left: 600px;
+
+.mainInfo .paperclip_1 {
+    bottom: 200px;
+    left: 600px;
 }
-.mainInfo .paperclip_2
-{
+
+.mainInfo .paperclip_2 {
     bottom: 170px;
-    left: 660px;  transform: rotate(55deg);
+    left: 660px;
+    transform: rotate(55deg);
 }
 
-.mainInfo .container
-{
-    display: flex;  align-items: center;     justify-content: space-between;
-
-    max-width: 60%;  margin-left: 250px;
+.mainInfo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 60%;
+    margin-left: 250px;
 }
 
-.mainInfo .container .greeting
-{
-    font-size: 1.2em;     line-height: 1.6;  text-align: left;
-
+.mainInfo .container .greeting {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: left;
     color: #232323;
 }
 
-.mainInfo .container .greeting div:nth-child(2)
-{
+.mainInfo .container .greeting div:nth-child(2) {
     font-family: Montserrat, sans-serif;
-    font-size: 2em;  font-weight: 600;  position: relative;  z-index: 1;
+    font-size: 2em;
+    font-weight: 600;
+    position: relative;  z-index: 1;
 }
 
-.mainInfo .container .greeting div:nth-child(2):after
-{
-    position: absolute;  z-index: -1;     right: 0;  bottom: 0;  width: 370px;  height: 20px;
-
-    content: '';  background-color: #ff214f;
+.mainInfo .container .greeting div:nth-child(2):after {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 370px;
+    height: 20px;
+    content: '';
+    background-color: #ff214f;
 }
 
-.mainInfo .container .greeting h1
-{
-    font-size: 1.5em;  margin: 0;
+.mainInfo .container .greeting h1 {
+    font-size: 1.5em;
+    margin: 0;
 }
 
-.mainInfo .container .photo
-{
-    position: relative;     display: block;  align-self: start;  width: 300px;  height: 400px;  margin-top: 10%;
-
+.mainInfo .container .photo {
+    position: relative;
+    display: block;
+    align-self: start;
+    width: 300px;
+    height: 400px;
+    margin-top: 10%;
     background-image: url('../../images/I.jpg');  background-size: cover;
 }
 
-.mainInfo .container .photo:after
-{
-    position: absolute;  z-index: -1;     top: -17px;  left: 15px;  width: 290px;  height: 420px;
-
-    content: '';  border: 7px solid #ff214f;
+.mainInfo .container .photo:after {
+    position: absolute;
+    z-index: -1;
+    top: -17px;
+    left: 15px;
+    width: 290px;
+    height: 420px;
+    content: '';
+    border: 7px solid #ff214f;
 }
 
-@media screen and (max-width:850px)
-{
-    .mainInfo
-    {
-        height: auto;
+@media screen and (max-width: 1440px) {
+    .mainInfo .flower {
+        width: 450px;
+        top: 80px;
+        right: -130px;
     }
 
-    .mainInfo .container
-    {
-        flex-direction: column;  justify-content: start;
-
-        width: 100%;  padding-bottom: 70px;
+    .mainInfo .flowerScroll {
+        top: 250px;
     }
 
-    .mainInfo .container .greeting
-    {
-        font-size: 20px;  font-weight: bolder;         margin-bottom: 30px;
+    .mainInfo .tablet {
+        width: 600px;
+        right: -220px;
+        bottom: -100px;
+    }
 
-        text-align: left;
+    .mainInfo .pen {
+        width: 280px;
+        right: 290px;
+        bottom: -40px;
+    }
+
+    .mainInfo .papers {
+        width: 800px;
+        bottom: -360px;
+        left: -310px;
+    }
+
+    .mainInfo .red_marker {
+        width: 270px;
+    }
+
+    .mainInfo .black_marker {
+        width: 190px;
+        bottom: 140px;
+        left: 110px;
+    }
+
+    .mainInfo .paperclip_1 {
+        width: 45px;
+        bottom: 120px;
+        left: 510px;
+    }
+
+    .mainInfo .paperclip_2 {
+        width: 46px;
+        bottom: 100px;
+        left: 560px;
+        transform: rotate(50deg);
+    }
+
+    .mainInfo .container {
+        max-width: 65%;
+        margin-left: 150px;
+        justify-content: space-around;
+    }
+
+    .mainInfo .container .greeting {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .mainInfo .container .greeting div:nth-child(2):after {
+        right: -2px;
+        bottom: 3px;
+        width: 346px;
+        height: 15px;
+    }
+
+    .mainInfo .container .photo {
+        width: 250px;
+        height: 335px;
+    }
+
+    .mainInfo .container .photo:after {
+        width: 240px;
+        height: 355px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .mainInfo .flower,
+    .mainInfo .flowerScroll,
+    .mainInfo .tablet,
+    .mainInfo .pen,
+    .mainInfo .papers,
+    .mainInfo .red_marker,
+    .mainInfo .black_marker,
+    .mainInfo .paperclip_1,
+    .mainInfo .paperclip_2 {
+        display: none;
+    }
+
+    .mainInfo .container {
+        max-width: 80%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .mainInfo .container .greeting {
+        font-size: 0.85em;
+        line-height: 1.4;
+    }
+
+    .mainInfo .container .greeting div:nth-child(2):after {
+        width: 295px;
+        height: 12px;
+    }
+
+    .mainInfo .container .photo {
+        width: 220px;
+        height: 295px;
+    }
+
+    .mainInfo .container .photo:after {
+        width: 210px;
+        height: 315px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .mainInfo .container {
+        max-width: 90%;
+        height: 80%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .mainInfo .container .greeting div:nth-child(2):after {
+        display: none;
+    }
+
+    .mainInfo .container .photo {
+        align-self: center;
+        width: 250px;
+        height: 335px;
+    }
+
+    .mainInfo .container .photo:after {
+        width: 240px;
+        height: 355px;
     }
 }
