@@ -1,17 +1,17 @@
 .contacts {
     background-image: url('http://wpdemos.themezaa.com/pofo/wp-content/uploads/2017/06/homepage-option15-bg.jpg');
     background-size: cover;
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .contacts .container {
+    padding: 5%;
     width:75%;
     display: flex;
     justify-content: space-evenly;
-    padding: 15%;
 }
 
 .contacts .container .contactsBlock {

@@ -123,7 +123,7 @@
     border: 7px solid #ff214f;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px), (min-device-aspect-ratio: 16/9) {
     .mainInfo .flower {
         width: 450px;
         top: 80px;
@@ -137,13 +137,13 @@
     .mainInfo .tablet {
         width: 600px;
         right: -220px;
-        bottom: -100px;
+        bottom: -120px;
     }
 
     .mainInfo .pen {
         width: 280px;
         right: 290px;
-        bottom: -40px;
+        bottom: -90px;
     }
 
     .mainInfo .papers {
@@ -215,6 +215,10 @@
     .mainInfo .paperclip_1,
     .mainInfo .paperclip_2 {
         display: none;
+    }
+
+    .mainInfo {
+        height: 80vh;
     }
 
     .mainInfo .container {
