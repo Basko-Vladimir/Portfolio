@@ -12,9 +12,11 @@ const Contacts = () => {
                     <div className={styles.headerBlockWrap}>
                         <HeaderBlock headerName={'My contacts'}/>
                     </div>
-                    <InfoItem header={'Location'} content={'Minsk, Belarus'}/>
-                    <InfoItem header={'Email'} content={'1989bvg@gmail.com'}/>
-                    <InfoItem header={'Phone'} content={'+375 44 565 97 51'}/>
+                    <div className={styles.infoItemsWrap}>
+                        <InfoItem header={'Location'} content={'Minsk, Belarus'}/>
+                        <InfoItem header={'Email'} content={'1989bvg@gmail.com'}/>
+                        <InfoItem header={'Phone'} content={'+375 44 565 97 51'}/>
+                    </div>
                 </div>
                 <div className={styles.formBlock}>
                     <form className={styles.form}>

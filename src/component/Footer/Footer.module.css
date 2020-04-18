@@ -26,6 +26,7 @@
     margin-bottom: 0;
     color: white;
 }
+
 .footer .container div span{
     font-weight: 500;
 }
@@ -42,19 +43,33 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 760px){
     .footer .container {
         width: 100%;
     }
 
     .footer .container .iconBlock {
-        width: 50%;
+        width: 65%;
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 360px){
     .footer .container .iconBlock {
-        width: 75%;
+        width: 100%;
     }
+
+    .footer .container div span{
+        font-size: 1.3em;
+    }
+
+    .footer .container .iconBlock {
+        justify-content: space-around;
+    }
+
+    .footer .container .iconBlock img{
+        width:40px;
+        height: 40px;
+    }
+
 }
 

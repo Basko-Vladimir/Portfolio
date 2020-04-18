@@ -19,38 +19,22 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1250px) and (min-width: 851px){
+@media screen and (max-width: 1440px) {
     .projects .container {
-        width: 100%;
+        width: 90%;
     }
 
 }
 
-@media screen and (max-width: 850px){
-    .projects {
-        height: auto;
-    }
-
+@media screen and (max-width: 760px){
     .projects .container{
-        margin-top: 70px;
-        margin-bottom: 110px;
-        width: 100%;
-    }
-
-    .projects .container .projectsHeader span{
-        padding: 0 10px;
-        font-size: 22px;
+        padding-top: 40px;
+        margin-bottom: 40px;
     }
 
     .projects .container .projectsBlock{
-        height: 1400px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        border: 1px solid;
+        align-items: center;
     }
-
-
-
 }
-

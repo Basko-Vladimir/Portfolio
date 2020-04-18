@@ -4,7 +4,6 @@
 
 .headerBlock span{
     font-family: Montserrat, sans-serif;
-    /*color: #000000;*/
     font-size: 1.5em;
     font-weight: 600;
     padding: 0 10px;
@@ -22,3 +21,10 @@
     background-color: #FF214F;
     z-index: -1;
 }
+
+@media screen and (max-width: 760px) {
+    .headerBlock {
+        margin-bottom: 25px;
+    }
+}
+

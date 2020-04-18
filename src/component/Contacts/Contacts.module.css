@@ -32,7 +32,6 @@
     justify-content: flex-end;
 }
 
-
 .contacts .container .form {
     width: 500px;
     background-color: #1C1C1C;
@@ -42,7 +41,6 @@
     align-items: center;
     padding-top: 30px;
     opacity: 0.8;
-
 }
 
 .contacts .container .form .inputs,
@@ -72,33 +70,94 @@
 }
 
 
-@media screen and (max-width: 850px){
-    .contacts {
-        height: 700px;
-    }
-
+@media screen and (max-width: 1440px){
     .contacts .container {
-        width:80%;
-        height:75%
+        width:85%;
+        padding: 5%;
     }
-
-    .contacts .container .form{
-        width: 70%;
-        height: 50%;
-    }
-
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 1100px){
     .contacts .container {
+        width:90%;
+        justify-content: space-between;
+    }
+
+    .contacts .container .formBlock{
+        width: 60%;
+    }
+
+    .contacts .container .contactsBlock {
+        width:35%;
+    }
+
+    .contacts .container .form .inputs,
+    .contacts .container .form .textArea{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .contacts {
+        height: auto;
+    }
+
+    .contacts .container {
+        width:90%;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 5%;
+    }
+
+    .contacts .container .contactsBlock {
+        width:100%;
+        text-align: center;
+    }
+
+    .contacts .container .contactsBlock .headerBlockWrap {
+        margin-bottom: 20px;
+    }
+
+    .contacts .container .contactsBlock .headerBlockWrap {
+        font-size: 16px;
+    }
+
+    .contacts .container .contactsBlock .infoItemsWrap {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contacts .container .formBlock{
+        width: 85%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .contacts .container {
+        width:100%;
+        padding: 40px 0;
+    }
+
+    .contacts .container .formBlock{
         width:100%;
     }
 
-    .contacts .container .form{
-        width: 100%;
+    .contacts .container .form .inputs,
+    .contacts .container .form .textArea{
+        padding: 3px;
+        margin-top: 20px;
     }
 
+    .contacts .container .form .btnWrap{
+        margin: 30px;
+    }
 }
+
+
+
 
 
 

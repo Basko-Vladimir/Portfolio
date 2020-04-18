@@ -81,7 +81,8 @@
     font-family: Montserrat, sans-serif;
     font-size: 2em;
     font-weight: 600;
-    position: relative;  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .mainInfo .container .greeting div:nth-child(2):after {
@@ -107,7 +108,8 @@
     width: 300px;
     height: 400px;
     margin-top: 10%;
-    background-image: url('../../images/I.jpg');  background-size: cover;
+    background-image: url('../../images/I.jpg');
+    background-size: cover;
 }
 
 .mainInfo .container .photo:after {
@@ -267,3 +269,44 @@
         height: 355px;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .mainInfo {
+        height: 600px;
+    }
+
+    .mainInfo .container {
+        max-width: 90%;
+        height: 90%;
+    }
+
+    .mainInfo .container .greeting {
+        font-size: 1.0em;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .mainInfo .container .greeting div:nth-child(2){
+        font-size: 1.5em;
+    }
+    .mainInfo .container .greeting h1{
+        font-size: 1.3em;
+    }
+
+    .mainInfo .container .photo {
+        align-self: center;
+        width: 220px;
+        height: 295px;
+    }
+
+    .mainInfo .container .photo:after {
+        width: 207px;
+        height: 315px;
+    }
+
+
+
+
+
+}
+

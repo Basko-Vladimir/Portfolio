@@ -69,55 +69,57 @@
     font-size: 1.2em;
 }
 
-@media screen and (max-width: 1250px) and (min-width: 851px){
+@media screen and (max-width: 1440px) {
     .skills .container {
-        width: 100%;
+        width: 90%;
     }
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1100px) {
+    .skills .container {
+        width: 95%;
+    }
+
+    .skills .container .skillsBlock .skillItem {
+        width: 90px;
+        height: 90px;
+    }
+
+    .skills .container .skillsBlock .skillItem img {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 760px) {
     .skills {
-        height: auto;
+        height:auto;
+        padding: 50px 0;
     }
 
-    .skills .container{
-        width: 100%;
-        padding-bottom: 70px;
-    }
-
-    .skills .container .skillsHeader{
-        height: auto;
-        padding: 70px 0;
+    .skills .container {
+        width: 80%;
     }
 
     .skills .container .skillsBlock{
-        height: 1250px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-row-gap: 30px;
     }
 
-    .skills .container .skillsBlock .skillItem{
-        display: flex;
-        height: 380px;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid;
-        width: 280px;
+    .skills .container .skillsBlock .wrapSkills {
+        height: 100%;
     }
+}
 
-    .skills .container .skillsBlock .skillItem img{
-        width:80px;
-        height: 80px;
-        background-color: #979797;
-    }
+@media screen and (max-width: 360px) {
 
-    .skills .container .skillsBlock .skillItem span{
-        font-weight: bolder;
-        font-size: 20px;
+    .skills .container .skillsBlock{
+        grid-template-columns: 1fr;
     }
 
 }
+
+
 

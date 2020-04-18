@@ -20,9 +20,8 @@
     color:#979797;
 }
 
-@media screen and ( max-width: 850px) {
+@media screen and ( max-width: 760px) {
     .navMenu{
-        min-width: 320px;
-        padding: 0 5px;
+        display: none;
     }
 }

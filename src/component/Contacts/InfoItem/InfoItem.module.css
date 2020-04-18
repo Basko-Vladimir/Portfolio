@@ -16,3 +16,18 @@
     font-weight: 400;
     font-size: 15px;
 }
+
+@media screen and (max-width: 760px){
+    .infoItem{
+        margin: 5px 0;
+    }
+
+    .infoItem h3{
+        font-size: 16px;
+    }
+
+    .infoItem p{
+        font-size: 14px;
+        margin: 0;
+    }
+}
