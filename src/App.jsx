@@ -18,6 +18,10 @@ class App extends React.Component {
         window.addEventListener('scroll', this.scrollPage)
     }
 
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.scrollPage)
+    }
+
     scrollPage = () => {
         if (window.pageYOffset > 99){
             this.setState({isScrollPage: true})
