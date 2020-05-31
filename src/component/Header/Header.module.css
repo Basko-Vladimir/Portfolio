@@ -4,12 +4,14 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: .5s;
 }
 
 .headerBlack {
     background-color: #000000;
     position: fixed;
     z-index: 5;
+    transition: .5s;
 }
 
 .container{

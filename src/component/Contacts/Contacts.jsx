@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 
 const Contacts = () => {
     return (
-        <div className={styles.contacts}>
+        <div className={styles.contacts} id={'contacts'}>
             <div className={styles.container}>
                 <div className={styles.contactsBlock}>
                     <div className={styles.headerBlockWrap}>

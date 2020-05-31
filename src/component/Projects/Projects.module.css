@@ -1,7 +1,9 @@
 .projects {
     background-image: url("http://wpdemos.themezaa.com/pofo/wp-content/uploads/2017/06/testimonial-bg.png");
+    height: 50vh;
     display: flex;
     justify-content: center;
+
 }
 
 .projects .container{

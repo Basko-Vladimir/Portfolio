@@ -10,7 +10,7 @@ import redux from "../../images/reduxIcon.png";
 
 const Skills = () => {
     return (
-        <div className={styles.skills}>
+        <div className={styles.skills} id={'skills'}>
             <div className={styles.container}>
                 <div className={styles.skillsBlock}>
                     <div className={styles.wrapSkills}> </div>

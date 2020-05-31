@@ -16,50 +16,163 @@
     z-index: 2;
 }
 
-.mainInfo .flower {
-    top: 100px;
-    right: -175px;
-    transform: rotate(230deg);
-}
-
 .mainInfo .flowerScroll {
     top: 270px;
+}
+
+.mainInfo .flower {
+    top: 70px;
+    right: -175px;
+    transform: rotate(230deg);
+    animation: moveFlower 2s;
+}
+
+@keyframes moveFlower {
+    from {
+        top: -200px;
+        right: -400px;
+        transform: rotate(310deg);
+    }
+    to {
+        top: 70px;
+        right: -175px;
+        transform: rotate(230deg);
+    }
 }
 
 .mainInfo .tablet {
     right: -250px;
     bottom: -100px;
+    animation: moveTablet 2s;
+}
+
+@keyframes moveTablet {
+    from {
+        right: -500px;
+        bottom: -300px;
+        transform: rotate(-60deg);
+    }
+    to {
+        right: -250px;
+        bottom: -100px;
+        transform: rotate(0);
+    }
 }
 
 .mainInfo .pen {
     right: 360px;
     bottom: 0;
+    animation: movePen 2s;
+}
+
+@keyframes movePen {
+    from {
+        right: 500px;
+        bottom: -300px;
+        transform: rotate(-100deg);
+    }
+    to {
+        right: 360px;
+        bottom: 0;
+        transform: rotate(0);
+    }
 }
 
 .mainInfo .papers {
-    bottom: -400px;
+    bottom: -450px;
     left: -350px;
+    transform: rotate(280deg);
+    animation: movePapers 2s;
+}
+
+@keyframes movePapers {
+    from {
+        bottom: 0;
+        left: -1000px;
+        transform: rotate(360deg);
+    }
+    to {
+        bottom: -450px;
+        left: -350px;
+        transform: rotate(280deg);
+    }
 }
 
 .mainInfo .red_marker {
     bottom: -100px;
     left: 200px;
+    animation: moveRed_marker ease-in-out 2.5s;
+}
+
+@keyframes moveRed_marker {
+    from {
+        bottom: -700px;
+        left: 200px;
+        transform: rotate(90deg);
+    }
+    to {
+        bottom: -100px;
+        left: 200px;
+        transform: rotate(0);
+    }
 }
 
 .mainInfo .black_marker {
     bottom: 180px;
     left: 140px;
+    animation: moveBlack_marker ease-in-out 3s;
+}
+
+@keyframes moveBlack_marker {
+    from {
+        bottom: 0;
+        left: -500px;
+        transform: rotate(-180deg);
+    }
+    to {
+        bottom: 180px;
+        left: 140px;
+        transform: rotate(0);
+    }
 }
 
 .mainInfo .paperclip_1 {
     bottom: 200px;
     left: 600px;
+    animation: moveClip_1 2s
+}
+
+@keyframes moveClip_1 {
+    from {
+        bottom: -200px;
+        left: 700px;
+        transform: rotate(45deg);
+    }
+    to {
+        bottom: 200px;
+        left: 600px;
+        transform: rotate(0);
+    }
 }
 
 .mainInfo .paperclip_2 {
     bottom: 170px;
     left: 660px;
     transform: rotate(55deg);
+    animation: moveClip_2 3s
+}
+
+@keyframes moveClip_2 {
+    from {
+        bottom: -300px;
+        left: 1000px;
+        transform: rotate(90deg);
+    }
+    to {
+        bottom: 170px;
+        left: 660px;
+        transform: rotate(55deg);
+    }
 }
 
 .mainInfo .container {

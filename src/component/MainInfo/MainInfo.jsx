@@ -12,7 +12,7 @@ const MainInfo = (props) => {
     let classMainInfo = props.isScrollPage ? `${styles.mainInfo} ${styles.mainInfoScroll}` : styles.mainInfo;
     let classFlower = props.isScrollPage ? `${styles.flower} ${styles.flowerScroll}` : styles.flower;
     return (
-        <div className={classMainInfo} >
+        <div className={classMainInfo} id={'main'} >
             <img src={flower} alt='flower' className={classFlower}/>
             <img src={tablet} alt='tablet' className={styles.tablet}/>
             <img src={pen} alt='pen' className={styles.pen}/>
