@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ProjectItem.module.css";
-import Button from "../../Button/Button";
+import Button from "../../common/Button/Button";
 
 const ProjectItem = (props) => {
     return (

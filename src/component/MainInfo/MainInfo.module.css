@@ -105,22 +105,22 @@
 }
 
 @keyframes moveRed_marker {
-    from {
-        bottom: -700px;
-        left: 200px;
-        transform: rotate(90deg);
-    }
-    to {
-        bottom: -100px;
-        left: 200px;
-        transform: rotate(0);
-    }
-}
+     from {
+         bottom: -700px;
+         left: 200px;
+         transform: rotate(90deg);
+     }
+     to {
+         bottom: -100px;
+         left: 200px;
+         transform: rotate(0);
+     }
+ }
 
 .mainInfo .black_marker {
     bottom: 180px;
     left: 140px;
-    animation: moveBlack_marker ease-in-out 3s;
+    animation: moveBlack_marker ease-in-out 2.5s;
 }
 
 @keyframes moveBlack_marker {
@@ -186,14 +186,14 @@
 .mainInfo .container .greeting {
     font-size: 1.2em;
     line-height: 1.6;
+    font-weight: 600;
     text-align: left;
     color: #232323;
 }
 
 .mainInfo .container .greeting div:nth-child(2) {
     font-family: Montserrat, sans-serif;
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 1.8em;
     position: relative;
     z-index: 1;
 }
@@ -202,9 +202,9 @@
     position: absolute;
     z-index: -1;
     right: 0;
-    bottom: 0;
-    width: 370px;
-    height: 20px;
+    bottom: 6px;
+    width: 273px;
+    height: 15px;
     content: '';
     background-color: #ff214f;
 }
@@ -216,14 +216,18 @@
 
 .mainInfo .container .photo {
     position: relative;
-    display: block;
-    align-self: start;
     width: 300px;
     height: 400px;
-    margin-top: 10%;
+    margin-top: 100px;
     background-image: url('../../images/I.jpg');
     background-size: cover;
 }
+
+.mainInfo .container .photo:hover {
+    transform: rotateY(90deg);
+    transition: 2s ;
+}
+
 
 .mainInfo .container .photo:after {
     position: absolute;

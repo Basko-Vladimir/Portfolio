@@ -9,19 +9,22 @@ import linkedin_W from "../../images/in_W.png";
 import vk from "../../images/vk.png";
 import vk_W from "../../images/vk_W.png";
 import Icon from "./Icon/Icon";
-import HeaderBlock from "../HeaderBlock/HeaderBlock";
+import HeaderBlock from "../common/HeaderBlock/HeaderBlock";
+import Fade from 'react-reveal/Fade';
 
 const Footer = () => {
     return (
         <div className={styles.footer}>
             <div className={styles.container}>
-                <HeaderBlock headerName={'Basko Vladimir'}/>
-                <div className={styles.iconBlock}>
-                    <Icon link={gh} linkHover={gh_W} alt={'Githun'}/>
-                    <Icon link={telegram} linkHover={telegram_W} alt={'Telegram'}/>
-                    <Icon link={linkedin} linkHover={linkedin_W} alt={'Linkedin'}/>
-                    <Icon link={vk} linkHover={vk_W} alt={'VK'}/>
-                </div>
+                <Fade duration={2000} >
+                    <HeaderBlock headerName={'Basko Vladimir'}/>
+                    <div className={styles.iconBlock}>
+                        <Icon link={gh} linkHover={gh_W} alt={'Githun'}/>
+                        <Icon link={telegram} linkHover={telegram_W} alt={'Telegram'}/>
+                        <Icon link={linkedin} linkHover={linkedin_W} alt={'Linkedin'}/>
+                        <Icon link={vk} linkHover={vk_W} alt={'VK'}/>
+                    </div>
+                </Fade>
                 <span className={styles.copyRights}>&copy; 2020 All copyrights reserved</span>
             </div>
         </div>

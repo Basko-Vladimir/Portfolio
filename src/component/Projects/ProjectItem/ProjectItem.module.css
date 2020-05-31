@@ -9,6 +9,10 @@
     position: relative;
 }
 
+.projectsItem .wrapPhoto:hover .photoProject{
+    filter: blur(3px);
+}
+
 .projectsItem .wrapPhoto .photoProject{
     width: 100%;
     display: flex;

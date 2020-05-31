@@ -7,12 +7,13 @@ import papers from "../../images/papers.png";
 import red_marker from "../../images/red_marker.png";
 import black_marker from "../../images/black_marker.png";
 import paperclip from "../../images/paperclip.png";
+import {Roll, Bounce} from "react-reveal";
 
 const MainInfo = (props) => {
     let classMainInfo = props.isScrollPage ? `${styles.mainInfo} ${styles.mainInfoScroll}` : styles.mainInfo;
     let classFlower = props.isScrollPage ? `${styles.flower} ${styles.flowerScroll}` : styles.flower;
     return (
-        <div className={classMainInfo} id={'main'} >
+        <div className={classMainInfo} id={'main'}>
             <img src={flower} alt='flower' className={classFlower}/>
             <img src={tablet} alt='tablet' className={styles.tablet}/>
             <img src={pen} alt='pen' className={styles.pen}/>
@@ -22,12 +23,19 @@ const MainInfo = (props) => {
             <img src={paperclip} alt='paperclip' className={styles.paperclip_1}/>
             <img src={paperclip} alt='paperclip' className={styles.paperclip_2}/>
             <div className={styles.container}>
-                <div className={styles.greeting}>
-                    <div>Привет!</div>
-                    <div>Я Басько Владимир</div>
-                    <h1>Я front-end разработчик</h1>
-                </div>
-                <div className={styles.photo}> </div>
+                <Roll left cascade delay={500}>
+                    <div className={styles.greeting}>
+                        <div>Hi, There!</div>
+                        <div>I am Basko Vladimir</div>
+                        <h1>Я front-end developer</h1>
+                    </div>
+                </Roll>
+                <Bounce top delay={2000} duration={1000}>
+                    <div>
+                        <div className={styles.photo}> </div>
+                    </div>
+                </Bounce>
+
             </div>
         </div>
     )
