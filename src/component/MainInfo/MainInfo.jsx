@@ -33,6 +33,7 @@ const MainInfo = (props) => {
                 <Bounce top delay={2000} duration={1000}>
                     <div>
                         <div className={styles.photo}> </div>
+                        <div className={styles.backSide}> </div>
                     </div>
                 </Bounce>
 
