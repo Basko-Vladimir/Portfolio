@@ -4,6 +4,7 @@ class Icon extends React.Component{
     state = {
         isHover: false
     };
+
     onChangeHover = () => {
         this.setState({
             isHover: !this.state.isHover

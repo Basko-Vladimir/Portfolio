@@ -8,6 +8,8 @@ import red_marker from "../../images/red_marker.png";
 import black_marker from "../../images/black_marker.png";
 import paperclip from "../../images/paperclip.png";
 import {Roll, Bounce} from "react-reveal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faVk, faLinkedinIn, faTelegram, faGithub} from '@fortawesome/fontawesome-free-brands';
 
 const MainInfo = (props) => {
     let classMainInfo = props.isScrollPage ? `${styles.mainInfo} ${styles.mainInfoScroll}` : styles.mainInfo;
@@ -30,13 +32,24 @@ const MainInfo = (props) => {
                         <h1>Я front-end developer</h1>
                     </div>
                 </Roll>
-                <Bounce top delay={1500} duration={1000}>
-                    <div>
-                        <div className={styles.photo}> </div>
-                        <div className={styles.backSide}> </div>
+                <Bounce top delay={1500} duration={1000} >
+                    <div className={styles.photoBlock}>
+                        <div className={styles.rotate}>
+                            <div className={styles.photo}> </div>
+                            <div className={styles.backSide}>
+                                <h2>Basko Vladimir</h2>
+                                <p>Email: 1989bvg@gmail.com</p>
+                                <p>Phone: +375 44 565 97 51</p>
+                                <div className={styles.contactsIcon}>
+                                   <FontAwesomeIcon  icon={faVk}/>
+                                   <FontAwesomeIcon  icon={faTelegram}/>
+                                   <FontAwesomeIcon  icon={faGithub}/>
+                                   <FontAwesomeIcon  icon={faLinkedinIn}/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </Bounce>
-
             </div>
         </div>
     )

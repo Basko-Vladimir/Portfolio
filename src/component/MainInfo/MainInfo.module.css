@@ -216,31 +216,30 @@
     margin: 0;
 }
 
+.mainInfo .container .photoBlock {
+    width: 300px;
+    height: 400px;
+    margin-top: 100px;
+    perspective: 1000px;
+}
+
+.mainInfo .container .photoBlock:hover .rotate {
+    transform: rotateY(180deg);
+}
+
+.mainInfo .container .rotate {
+    position: relative;
+    transition: 1.5s;
+    transform-style: preserve-3d;
+}
+
 .mainInfo .container .photo {
     position: relative;
     width: 300px;
     height: 400px;
-    margin-top: 100px;
     background-image: url('../../images/I.jpg');
     background-size: cover;
-    backface-visibility: hidden;
-    transform: perspective(500px) rotateY(0);
 }
-
-.mainInfo .container .backSide {
-    position: relative;
-    transform: perspective(500px) rotateY(180deg);
-    width: 300px;
-    height: 400px;
-    margin-top: 100px;
-    /*backface-visibility: hidden;*/
-}
-
-.mainInfo .container .photo:hover {
-    transform: rotateY(180deg);
-    transition: 2s ;
-}
-
 
 .mainInfo .container .photo:after {
     position: absolute;
@@ -251,6 +250,39 @@
     height: 420px;
     content: '';
     border: 7px solid #ff214f;
+}
+
+.mainInfo .container .backSide {
+    position: absolute;
+    width: 292px;
+    height: 392px;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    border: 4px double #949494;
+    background-color: #ccc;
+    backface-visibility: hidden;
+}
+
+.mainInfo .container .backSide h2 {
+    margin: 70px 0 30px;
+}
+
+.mainInfo .container .backSide p {
+    margin-bottom: 20px;
+}
+
+.mainInfo .container .backSide .contactsIcon {
+     margin: 0 auto;
+     width: 60%;
+     font-size: 30px;
+     display: flex;
+     justify-content: space-between;
+     cursor: pointer;
+ }
+
+.mainInfo .container .backSide .contactsIcon a{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1440px), (min-device-aspect-ratio: 16/9) {

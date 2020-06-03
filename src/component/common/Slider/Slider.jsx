@@ -10,8 +10,10 @@ import portfolio from "../../../images/portfolio.png";
 
 const SliderBox = () => {
     const settings = {
+        className: 'center',
+        centerMode: true,
         infinite: true,
-        centerPadding: "60px",
+        centerPadding: 0,
         slidesToShow: 3,
         speed: 500,
         dots: true

@@ -18,13 +18,9 @@
     bottom: -70px !important;
 }
 
-.slick-initialized .slick-slide div{
+.slick-initialized .slick-slide {
     display: flex;
     justify-content: center;
-}
-
-.slick-center div .projectsItem {
-    background-color: green;
 }
 
 .slick-slider {
