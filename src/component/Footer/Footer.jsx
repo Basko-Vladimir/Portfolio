@@ -11,6 +11,8 @@ import vk_W from "../../images/vk_W.png";
 import Icon from "./Icon/Icon";
 import HeaderBlock from "../common/HeaderBlock/HeaderBlock";
 import Fade from 'react-reveal/Fade';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faVk, faLinkedinIn, faTelegram, faGithub} from '@fortawesome/fontawesome-free-brands';
 
 const Footer = () => {
     return (
@@ -19,11 +21,15 @@ const Footer = () => {
                 <Fade duration={2000} >
                     <HeaderBlock headerName={'Basko Vladimir'}/>
                     <div className={styles.iconBlock}>
-                        <Icon link={gh} linkHover={gh_W} alt={'Githun'}/>
-                        <Icon link={telegram} linkHover={telegram_W} alt={'Telegram'}/>
-                        <Icon link={linkedin} linkHover={linkedin_W} alt={'Linkedin'}/>
-                        <Icon link={vk} linkHover={vk_W} alt={'VK'}/>
-                    </div>
+                        {/*<Icon link={gh} linkHover={gh_W} alt={'Githun'}/>*/}
+                        {/*<Icon link={telegram} linkHover={telegram_W} alt={'Telegram'}/>*/}
+                        {/*<Icon link={linkedin} linkHover={linkedin_W} alt={'Linkedin'}/>*/}
+                        {/*<Icon link={vk} linkHover={vk_W} alt={'VK'}/>*/}
+                        <div><FontAwesomeIcon icon={faVk}/></div>
+                        <div><FontAwesomeIcon icon={faTelegram}/></div>
+                        <div><FontAwesomeIcon icon={faGithub}/></div>
+                        <div><FontAwesomeIcon icon={faLinkedinIn}/></div>
+            </div>
                 </Fade>
                 <span className={styles.copyRights}>&copy; 2020 All copyrights reserved</span>
             </div>
