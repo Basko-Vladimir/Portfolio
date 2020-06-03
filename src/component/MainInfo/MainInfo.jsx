@@ -30,7 +30,7 @@ const MainInfo = (props) => {
                         <h1>Я front-end developer</h1>
                     </div>
                 </Roll>
-                <Bounce top delay={2000} duration={1000}>
+                <Bounce top delay={1500} duration={1000}>
                     <div>
                         <div className={styles.photo}> </div>
                         <div className={styles.backSide}> </div>

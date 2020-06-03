@@ -189,6 +189,8 @@
     font-weight: 600;
     text-align: left;
     color: #232323;
+    align-self: flex-start;
+    margin-top: 200px;
 }
 
 .mainInfo .container .greeting div:nth-child(2) {

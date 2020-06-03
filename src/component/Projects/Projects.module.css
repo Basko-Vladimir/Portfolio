@@ -1,13 +1,13 @@
 .projects {
     background-image: url("http://wpdemos.themezaa.com/pofo/wp-content/uploads/2017/06/testimonial-bg.png");
-    height: 50vh;
     display: flex;
+    width: 100%;
+    height: 100%;
     justify-content: center;
-
 }
 
 .projects .container{
-    width: 75%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,6 @@
     .projects .container {
         width: 90%;
     }
-
 }
 
 @media screen and (max-width: 760px){
