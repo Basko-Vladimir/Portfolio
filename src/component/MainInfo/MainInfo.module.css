@@ -346,9 +346,9 @@
 
     .mainInfo .container .greeting div:nth-child(2):after {
         right: -2px;
-        bottom: 3px;
-        width: 346px;
-        height: 15px;
+        bottom: 4px;
+        width: 231px;
+        height: 12px;
     }
 
     .mainInfo .container .photo {
@@ -406,8 +406,8 @@
     }
 
     .mainInfo .container .greeting div:nth-child(2):after {
-        width: 295px;
-        height: 12px;
+        width: 197px;
+        height: 10px;
     }
 
     .mainInfo .container .photo {
@@ -449,8 +449,20 @@
         align-content: center;
     }
 
+    .mainInfo .container .greeting {
+        align-self: center;
+        margin-top: 150px;
+    }
+
     .mainInfo .container .greeting div:nth-child(2):after {
-        display: none;
+        width: 194px;
+        height: 9px;
+        right: -1px;
+        bottom: 3px;
+    }
+
+    .mainInfo .container .photoBlock:hover .rotate {
+        transform: none;
     }
 
     .mainInfo .container .photo {
@@ -500,6 +512,14 @@
     .mainInfo .container .greeting div:nth-child(2){
         font-size: 1.5em;
     }
+
+    .mainInfo .container .greeting div:nth-child(2):after {
+        width: 189px;
+        height: 9px;
+        right: 0;
+        bottom: 6px;
+    }
+
     .mainInfo .container .greeting h1{
         font-size: 1.3em;
     }
