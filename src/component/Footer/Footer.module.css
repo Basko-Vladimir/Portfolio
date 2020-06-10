@@ -44,7 +44,7 @@
     }
 
     .footer .container .iconBlock {
-        width: 65%;
+        width: 60%;
     }
 }
 
@@ -59,12 +59,8 @@
 
     .footer .container .iconBlock {
         justify-content: space-around;
-    }
-
-    .footer .container .iconBlock img{
-        width:40px;
-        height: 40px;
-        color:green;
+        width: 80%;
+        font-size: 35px;
     }
 
 }

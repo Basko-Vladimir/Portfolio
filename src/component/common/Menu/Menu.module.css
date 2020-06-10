@@ -1,0 +1,21 @@
+.link {
+    text-decoration: none;
+    color:#232323;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+}
+
+.active {
+    border-bottom: 3px solid #FF214F;
+}
+
+.linkBlack {
+    color: #ffffff;
+}
+
+.link:hover {
+    color:#979797;
+}

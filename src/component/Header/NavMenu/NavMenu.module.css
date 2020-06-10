@@ -4,28 +4,6 @@
     justify-content: space-between;
 }
 
-.navMenu .link {
-    text-decoration: none;
-    color:#232323;
-    font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    cursor: pointer;
-    position: relative;
-}
-
-.active {
-    border-bottom: 3px solid #FF214F;
-}
-
-.navMenu .linkBlack {
-    color: #ffffff;
-}
-
-.navMenu .link:hover {
-    color:#979797;
-}
-
 @media screen and ( max-width: 760px) {
     .navMenu{
         display: none;

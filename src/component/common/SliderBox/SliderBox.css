@@ -10,19 +10,18 @@
     color: #1C1C1C !important;
 }
 
-.slick-next:before {
-    margin-left: 30px;
-}
-
 .slick-dots {
     bottom: -70px !important;
-}
-
-.slick-initialized .slick-slide {
-    display: flex;
-    justify-content: center;
 }
 
 .slick-slider {
     padding-left: 30px;
 }
+
+@media screen and (max-width: 760px) {
+    .slick-slider {
+        padding-left: 10%;
+    }
+}
+
+

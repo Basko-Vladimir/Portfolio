@@ -2,15 +2,34 @@ import React from "react";
 import styles from "./MobileNavMenu.module.css";
 import lightMenu from "../../../images/lightMenu.png";
 import darkMenu from "../../../images/darkMenu.png";
+import Menu from "../../common/Menu/Menu";
 
-const MobileNavMenu = (props) => {
+class MobileNavMenu extends React.Component {
+    state = {
+        isVisible: false
+    };
 
-    let mobileMenu = props.isScrollPage ? lightMenu : darkMenu;
-    return (
-        <div className={styles.mobileNavMenu}>
-            <img src={mobileMenu} alt="NavMenu"/>
-        </div>
-    )
-};
+    isToggleMenu = () => {
+        this.setState({
+            isVisible: !this.state.isVisible
+        })
+    };
+
+
+    render() {
+        let mobileMenu = this.props.isScrollPage ? lightMenu : darkMenu;
+        let classMobileMenu = this.props.isScrollPage ? `${styles.mobileMenu} ${styles.mobileMenuBlack}` : styles.mobileMenu;
+        return (
+            <div className={styles.mobileNavMenu}>
+                <img src={mobileMenu} alt="NavMenu" onClick={this.isToggleMenu}/>
+                {
+                    this.state.isVisible && <div className={classMobileMenu} >
+                                                <Menu isScrollPage={this.props.isScrollPage}/>
+                                            </div>
+                }
+            </div>
+        )
+    }
+}
 
 export default MobileNavMenu;
