@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "04ea62b6d31c173214ab6a2105090799",
+    "revision": "54ec3dcd66f41f1410409b0ecd687e72",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "935ef77fd855f321524d",
-    "url": "/Portfolio/static/css/main.068d69a3.chunk.css"
+    "revision": "7f499478b6101e2524e3",
+    "url": "/Portfolio/static/css/2.51b93fa0.chunk.css"
   },
   {
-    "revision": "a54e42dc763460bff9f3",
-    "url": "/Portfolio/static/js/2.f2eaabd4.chunk.js"
+    "revision": "85c0782aafa775e9022f",
+    "url": "/Portfolio/static/css/main.eb481258.chunk.css"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Portfolio/static/js/2.f2eaabd4.chunk.js.LICENSE.txt"
+    "revision": "7f499478b6101e2524e3",
+    "url": "/Portfolio/static/js/2.be0b3ea3.chunk.js"
   },
   {
-    "revision": "935ef77fd855f321524d",
-    "url": "/Portfolio/static/js/main.bef3a5b0.chunk.js"
+    "revision": "6da8b1477d4ae8922d6cf913cd5d5a1d",
+    "url": "/Portfolio/static/js/2.be0b3ea3.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "85c0782aafa775e9022f",
+    "url": "/Portfolio/static/js/main.c83e1b06.chunk.js"
   },
   {
     "revision": "654ea12aa83236a26bec",
@@ -60,12 +64,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/red_marker.00bfc239.png"
   },
   {
+    "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
+    "url": "/Portfolio/static/media/slick.b7c9e1e4.woff"
+  },
+  {
+    "revision": "ced611daf7709cc778da928fec876475",
+    "url": "/Portfolio/static/media/slick.ced611da.eot"
+  },
+  {
+    "revision": "d41f55a78e6f49a5512878df1737e58a",
+    "url": "/Portfolio/static/media/slick.d41f55a7.ttf"
+  },
+  {
+    "revision": "f97e3bbf73254b0112091d0192f17aec",
+    "url": "/Portfolio/static/media/slick.f97e3bbf.svg"
+  },
+  {
     "revision": "9f3d6a9a1c85faae241ac1bf62e162bb",
     "url": "/Portfolio/static/media/socialNetwork.9f3d6a9a.png"
   },
   {
     "revision": "50e506757d9c94fce6542bbd9bbe8cb8",
     "url": "/Portfolio/static/media/tablet.50e50675.png"
+  },
+  {
+    "revision": "afaf602be2b524c3458ae4b6ed6669e3",
+    "url": "/Portfolio/static/media/todoList.afaf602b.png"
   },
   {
     "revision": "15c0ba3189b772e097b99b28f0895bad",
