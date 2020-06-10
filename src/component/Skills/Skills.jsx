@@ -12,10 +12,10 @@ const Skills = () => {
     const skills = [
         {title:'HTML', url: html},
         {title:'CSS', url: css},
-        {title:'HTML', url: js},
-        {title:'JavaScript', url: ts},
-        {title:'TypeScript', url: react},
-        {title:'React', url: redux}
+        {title:'JavaScript', url: js},
+        {title:'TypeScript', url: ts},
+        {title:'React', url: react},
+        {title:'Redux', url: redux}
     ];
     return (
         <div className={styles.skills} id={'skills'}>
