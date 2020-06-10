@@ -1,0 +1,8 @@
+.contactIcon{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contactIcon:hover{
+    color: #FE214E;
+}

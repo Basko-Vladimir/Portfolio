@@ -1,12 +1,14 @@
 import React from "react";
-import "./Slider.css";
+import "./SliderBox.css";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"
 import socNet from "../../../images/socialNetwork.png";
-import ProjectItem from "../../Projects/ProjectItem/ProjectItem";
 import counter from "../../../images/Counter.png";
 import portfolio from "../../../images/portfolio.png";
+import todoList from '../../../images/todoList.png'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"
+import ProjectItem from "../../Projects/ProjectItem/ProjectItem";
+
 
 const SliderBox = () => {
     const settings = {
@@ -18,14 +20,17 @@ const SliderBox = () => {
         speed: 500,
         dots: true
     };
+    const projects = [
+        {title:'Social Network', url: socNet },
+        {title:'Counter', url: counter },
+        {title:'Portfolio', url: todoList },
+        {title:'TodoList', url: portfolio }
+    ];
 
     return (
         <div className={'wrapper'}>
             <Slider {...settings}>
-                <ProjectItem link={socNet} projectName={'Social Network'}/>
-                <ProjectItem link={counter} projectName={'Counter'}/>
-                <ProjectItem link={portfolio} projectName={'Portfolio'} />
-                <ProjectItem link={portfolio} projectName={'Portfolio'} />
+                { projects.map( (p, i) => <ProjectItem key={i} link={p.url} title={p.title}/>) }
             </Slider>
         </div>
     )

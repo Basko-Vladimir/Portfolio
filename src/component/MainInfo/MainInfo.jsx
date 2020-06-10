@@ -8,22 +8,26 @@ import red_marker from "../../images/red_marker.png";
 import black_marker from "../../images/black_marker.png";
 import paperclip from "../../images/paperclip.png";
 import {Roll, Bounce} from "react-reveal";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faVk, faLinkedinIn, faTelegram, faGithub} from '@fortawesome/fontawesome-free-brands';
+import ContactIcon from "../Footer/ContactIcon/ContactIcon";
 
 const MainInfo = (props) => {
-    let classMainInfo = props.isScrollPage ? `${styles.mainInfo} ${styles.mainInfoScroll}` : styles.mainInfo;
-    let classFlower = props.isScrollPage ? `${styles.flower} ${styles.flowerScroll}` : styles.flower;
+    const classMainInfo = props.isScrollPage ? `${styles.mainInfo} ${styles.mainInfoScroll}` : styles.mainInfo;
+    const classFlower = props.isScrollPage ? `${styles.flower} ${styles.flowerScroll}` : styles.flower;
+    const icons = [faLinkedinIn, faTelegram, faGithub, faVk];
+    const images = [
+        {url: flower, class: classFlower},
+        {url: tablet, class: styles.tablet},
+        {url: pen, class: styles.pen},
+        {url: papers, class: styles.papers},
+        {url: red_marker, class: styles.red_marker},
+        {url: black_marker, class: styles.black_marker},
+        {url: paperclip, class: styles.paperclip_1},
+        {url: paperclip, class: styles.paperclip_2}
+        ];
     return (
         <div className={classMainInfo} id={'main'}>
-            <img src={flower} alt='flower' className={classFlower}/>
-            <img src={tablet} alt='tablet' className={styles.tablet}/>
-            <img src={pen} alt='pen' className={styles.pen}/>
-            <img src={papers} alt='papers' className={styles.papers}/>
-            <img src={red_marker} alt='red_marker' className={styles.red_marker}/>
-            <img src={black_marker} alt='black_marker' className={styles.black_marker}/>
-            <img src={paperclip} alt='paperclip' className={styles.paperclip_1}/>
-            <img src={paperclip} alt='paperclip' className={styles.paperclip_2}/>
+            { images.map( (image, i) => <img key={i} src={image.url} alt={image.class} className={image.class}/>)}
             <div className={styles.container}>
                 <Roll left cascade delay={500}>
                     <div className={styles.greeting}>
@@ -41,10 +45,7 @@ const MainInfo = (props) => {
                                 <p>Email: 1989bvg@gmail.com</p>
                                 <p>Phone: +375 44 565 97 51</p>
                                 <div className={styles.contactsIcon}>
-                                   <FontAwesomeIcon  icon={faVk}/>
-                                   <FontAwesomeIcon  icon={faTelegram}/>
-                                   <FontAwesomeIcon  icon={faGithub}/>
-                                   <FontAwesomeIcon  icon={faLinkedinIn}/>
+                                    { icons.map( (icon, i) => <ContactIcon key={i} iconType={icon} /> ) }
                                 </div>
                             </div>
                         </div>

@@ -13,9 +13,11 @@ const ProjectItem = (props) => {
             </div>
             <div className={styles.projectDescription}>
                 <div className={styles.descriptionBlock}>
-                    <div className={styles.projectName}>{props.projectName}</div>
-                    <div className={styles.aboutProject}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Consequatur dolor magni modi quibusdam vel! Dolore? </div>
+                    <div className={styles.projectName}>{props.title}</div>
+                    <div className={styles.aboutProject}>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Consequatur dolor magni modi quibusdam vel! Dolore?
+                    </div>
                 </div>
             </div>
         </div>

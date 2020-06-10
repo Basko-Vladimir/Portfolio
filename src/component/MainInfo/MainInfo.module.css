@@ -273,17 +273,14 @@
 }
 
 .mainInfo .container .backSide .contactsIcon {
-     margin: 0 auto;
-     width: 60%;
-     font-size: 30px;
-     display: flex;
-     justify-content: space-between;
-     cursor: pointer;
+    margin: 0 auto;
+    width: 60%;
+    font-size: 30px;
+    color: #232323;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
  }
-
-.mainInfo .container .backSide .contactsIcon a{
-    text-decoration: none;
-}
 
 @media screen and (max-width: 1440px), (min-device-aspect-ratio: 16/9) {
     .mainInfo .flower {

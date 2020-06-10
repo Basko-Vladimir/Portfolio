@@ -9,17 +9,20 @@ import react from "../../images/reactIcon.png";
 import redux from "../../images/reduxIcon.png";
 
 const Skills = () => {
+    const skills = [
+        {title:'HTML', url: html},
+        {title:'CSS', url: css},
+        {title:'HTML', url: js},
+        {title:'JavaScript', url: ts},
+        {title:'TypeScript', url: react},
+        {title:'React', url: redux}
+    ];
     return (
         <div className={styles.skills} id={'skills'}>
             <div className={styles.container}>
                 <div className={styles.skillsBlock}>
                     <div className={styles.wrapSkills}> </div>
-                    <SkillItem icon={html} name={'HTML'}/>
-                    <SkillItem icon={css} name={'CSS'}/>
-                    <SkillItem icon={js} name={'JavaScript'}/>
-                    <SkillItem icon={ts} name={'TypeScript'}/>
-                    <SkillItem icon={react} name={'React'}/>
-                    <SkillItem icon={redux} name={'Redux'}/>
+                    { skills.map( (s, i) => <SkillItem key={i} url={s.url} title={s.title} />)}
                 </div>
             </div>
         </div>

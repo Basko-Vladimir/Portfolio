@@ -5,10 +5,10 @@ import Fade from "react-reveal/Fade";
 const SkillItem = (props) => {
     return (
         <Fade right cascade>
-        <div className={styles.skillItem}>
-            <img src={props.icon} alt="icon"/>
-            <span>{props.name}</span>
-        </div>
+            <div className={styles.skillItem}>
+                <img src={props.url} alt="icon"/>
+                <span>{props.title}</span>
+            </div>
         </Fade>
     )
 };

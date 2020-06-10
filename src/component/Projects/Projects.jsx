@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Projects.module.css";
 import HeaderBlock from "../common/HeaderBlock/HeaderBlock";
-import SliderBox from "../common/Slider/Slider";
+import SliderBox from "../common/SliderBox/SliderBox";
 
 const Projects = () => {
 

@@ -6,6 +6,12 @@ import Button from "../common/Button/Button";
 import {Bounce} from "react-reveal";
 
 const Contacts = () => {
+    const infoItems = [
+        {header: 'Location', content: 'Minsk, Belarus'},
+        {header: 'Email', content: '1989bvg@gmail.com'},
+        {header: 'Phone', content: '+375 44 565 97 51'},
+    ];
+
     return (
         <div className={styles.contacts} id={'contacts'}>
             <div className={styles.container}>
@@ -15,9 +21,7 @@ const Contacts = () => {
                             <HeaderBlock headerName={'My contacts'}/>
                         </div>
                         <div className={styles.infoItemsWrap}>
-                            <InfoItem header={'Location'} content={'Minsk, Belarus'}/>
-                            <InfoItem header={'Email'} content={'1989bvg@gmail.com'}/>
-                            <InfoItem header={'Phone'} content={'+375 44 565 97 51'}/>
+                            { infoItems.map ( (item, i) => <InfoItem key={i} header={item.header} content={item.content} />)}
                         </div>
                     </div>
                 </Bounce>
