@@ -14,62 +14,6 @@
     justify-content: space-evenly;
 }
 
-.contacts .container .contactsBlock {
-    width:30%;
-    text-align: left;
-}
-
-.contacts .container .contactsBlock .headerBlockWrap {
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
-    margin-bottom: 60px;
-}
-
-.contacts .container .formBlock{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.contacts .container .form {
-    width: 500px;
-    background-color: #1C1C1C;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 30px;
-    opacity: 0.8;
-}
-
-.contacts .container .form .inputs,
-.contacts .container .form .textArea{
-    width: 350px;
-    background-color: #000000;
-    border: none;
-    border-radius: 3px;
-    padding: 5px;
-    margin-top: 30px;
-    color: #ffffff;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-}
-
-.contacts .container .form .inputs{
-    height:20px;
-}
-
-.contacts .container .form .textArea{
-    height: 100px;
-    resize: none;
-}
-
-.contacts .container .form .btnWrap{
-    margin: 50px;
-}
-
-
 @media screen and (max-width: 1440px){
     .contacts .container {
         width:85%;
@@ -81,19 +25,6 @@
     .contacts .container {
         width:90%;
         justify-content: space-between;
-    }
-
-    .contacts .container .formBlock{
-        width: 60%;
-    }
-
-    .contacts .container .contactsBlock {
-        width:35%;
-    }
-
-    .contacts .container .form .inputs,
-    .contacts .container .form .textArea{
-        width: 75%;
     }
 }
 
@@ -108,51 +39,12 @@
         align-items: center;
         padding: 50px 5%;
     }
-
-    .contacts .container .contactsBlock {
-        width:100%;
-        text-align: center;
-    }
-
-    .contacts .container .contactsBlock .headerBlockWrap {
-        margin-bottom: 20px;
-    }
-
-    .contacts .container .contactsBlock .headerBlockWrap {
-        font-size: 16px;
-    }
-
-    .contacts .container .contactsBlock .infoItemsWrap {
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .contacts .container .formBlock{
-        width: 85%;
-        justify-content: center;
-    }
 }
 
 @media screen and (max-width: 360px){
     .contacts .container {
         width:100%;
         padding: 40px 0;
-    }
-
-    .contacts .container .formBlock{
-        width:100%;
-    }
-
-    .contacts .container .form .inputs,
-    .contacts .container .form .textArea{
-        padding: 3px;
-        margin-top: 20px;
-    }
-
-    .contacts .container .form .btnWrap{
-        margin: 30px;
     }
 }
 
