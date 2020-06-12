@@ -6,9 +6,11 @@ const ProjectItem = (props) => {
     return (
         <div className={styles.projectsItem}>
             <div className={styles.wrapPhoto}>
-                <img src={props.link} alt={props.projectName} className={styles.photoProject}/>
+                <img src={props.url} alt={props.projectName} className={styles.photoProject}/>
                 <div className={styles.btnWrap}>
-                    <Button btnName={'See'}/>
+                    <a href={props.link} target="_blank" rel="noreferrer noopener">
+                        <Button btnName={'See'}/>
+                    </a>
                 </div>
             </div>
             <div className={styles.projectDescription}>

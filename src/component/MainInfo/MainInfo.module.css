@@ -159,7 +159,7 @@
     bottom: 170px;
     left: 660px;
     transform: rotate(55deg);
-    animation: moveClip_2 3s
+    animation: moveClip_2 2.5s
 }
 
 @keyframes moveClip_2 {
@@ -292,10 +292,36 @@
         top: 250px;
     }
 
+    @keyframes moveFlower {
+        from {
+            top: -200px;
+            right: -400px;
+            transform: rotate(310deg);
+        }
+        to {
+            top: 80px;
+            right: -130px;
+            transform: rotate(230deg);
+        }
+    }
+
     .mainInfo .tablet {
         width: 600px;
         right: -220px;
         bottom: -120px;
+    }
+
+    @keyframes moveTablet {
+        from {
+            right: -500px;
+            bottom: -300px;
+            transform: rotate(-60deg);
+        }
+        to {
+            right: -220px;
+            bottom: -120px;
+            transform: rotate(0);
+        }
     }
 
     .mainInfo .pen {
@@ -304,10 +330,36 @@
         bottom: -90px;
     }
 
+    @keyframes movePen {
+        from {
+            right: 500px;
+            bottom: -300px;
+            transform: rotate(-100deg);
+        }
+        to {
+            right: 290px;
+            bottom: -90px;
+            transform: rotate(0);
+        }
+    }
+
     .mainInfo .papers {
         width: 800px;
-        bottom: -360px;
+        bottom: -400px;
         left: -310px;
+    }
+
+    @keyframes movePapers {
+        from {
+            bottom: 0;
+            left: -1000px;
+            transform: rotate(360deg);
+        }
+        to {
+            bottom: -400px;
+            left: -310px;
+            transform: rotate(280deg);
+        }
     }
 
     .mainInfo .red_marker {
@@ -320,18 +372,57 @@
         left: 110px;
     }
 
+    @keyframes moveBlack_marker {
+        from {
+            bottom: 0;
+            left: -500px;
+            transform: rotate(-180deg);
+        }
+        to {
+            bottom: 140px;
+            left: 110px;
+            transform: rotate(0);
+        }
+    }
+
     .mainInfo .paperclip_1 {
         width: 45px;
         bottom: 120px;
         left: 510px;
     }
 
+    @keyframes moveClip_1 {
+        from {
+            bottom: -200px;
+            left: 700px;
+            transform: rotate(45deg);
+        }
+        to {
+            bottom: 120px;
+            left: 510px;
+            transform: rotate(0);
+        }
+    }
+
     .mainInfo .paperclip_2 {
         width: 46px;
         bottom: 100px;
         left: 560px;
-        transform: rotate(50deg);
     }
+
+    @keyframes moveClip_2 {
+        from {
+            bottom: -300px;
+            left: 1000px;
+            transform: rotate(90deg);
+        }
+        to {
+            bottom: 100px;
+            left: 560px;
+            transform: rotate(55deg);
+        }
+    }
+
 
     .mainInfo .container {
         max-width: 65%;
@@ -342,6 +433,7 @@
     .mainInfo .container .greeting {
         font-size: 1em;
         line-height: 1.5;
+        margin-top: 150px;
     }
 
     .mainInfo .container .greeting div:nth-child(2):after {

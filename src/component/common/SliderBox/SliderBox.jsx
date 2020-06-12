@@ -23,16 +23,16 @@ function SliderBox() {
         verticalSwiping: window.innerWidth < 760,
     };
     const projects = [
-        {title: 'Social Network', url: socNet},
-        {title: 'Counter', url: counter},
-        {title: 'Portfolio', url: todoList},
-        {title: 'TodoList', url: portfolio}
+        {title: 'Social Network', url: socNet, link: 'https://github.com/Basko-Vladimir/IT-incubator-social-network'},
+        {title: 'Counter', url: counter, link: 'https://basko-vladimir.github.io/Counter/'},
+        {title: 'TodoList', url: todoList, link: 'https://github.com/Basko-Vladimir/Todo-List'},
+        {title: 'Portfolio', url: portfolio, link: 'https://basko-vladimir.github.io/Portfolio/'}
     ];
 
     return (
         <div className={'wrapper'}>
             <Slider {...settings}>
-                {projects.map((p, i) => <ProjectItem key={i} link={p.url} title={p.title}/>)}
+                {projects.map((p, i) => <ProjectItem key={i} link={p.link} url={p.url} title={p.title}/>)}
             </Slider>
         </div>
     )

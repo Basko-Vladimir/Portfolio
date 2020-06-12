@@ -9,12 +9,17 @@ import black_marker from "../../images/black_marker.png";
 import paperclip from "../../images/paperclip.png";
 import {Roll, Bounce} from "react-reveal";
 import {faVk, faLinkedinIn, faTelegram, faGithub} from '@fortawesome/fontawesome-free-brands';
-import ContactIcon from "../Footer/ContactIcon/ContactIcon";
+import ContactIcon from "../common/ContactIcon/ContactIcon";
 
 const MainInfo = (props) => {
     const classMainInfo = props.isScrollPage ? `${styles.mainInfo} ${styles.mainInfoScroll}` : styles.mainInfo;
     const classFlower = props.isScrollPage ? `${styles.flower} ${styles.flowerScroll}` : styles.flower;
-    const icons = [faLinkedinIn, faTelegram, faGithub, faVk];
+    const icons = [
+        {icon: faLinkedinIn, link: 'https://www.linkedin.com/'},
+        {icon:faTelegram, link: 'https://t-do.ru/@BaVlaG'},
+        {icon:faGithub, link: 'https://github.com/Basko-Vladimir'},
+        {icon:faVk, link: 'https://vk.com/id161148807'}
+    ];
     const images = [
         {url: flower, class: classFlower},
         {url: tablet, class: styles.tablet},
@@ -45,7 +50,7 @@ const MainInfo = (props) => {
                                 <p>Email: 1989bvg@gmail.com</p>
                                 <p>Phone: +375 44 565 97 51</p>
                                 <div className={styles.contactsIcon}>
-                                    { icons.map( (icon, i) => <ContactIcon key={i} iconType={icon} /> ) }
+                                    { icons.map( (icon, i) => <ContactIcon key={i} iconType={icon.icon} link={icon.link} /> ) }
                                 </div>
                             </div>
                         </div>
