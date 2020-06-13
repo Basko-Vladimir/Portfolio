@@ -11,9 +11,7 @@ import {Roll, Bounce} from "react-reveal";
 import {faVk, faLinkedinIn, faTelegram, faGithub} from '@fortawesome/fontawesome-free-brands';
 import ContactIcon from "../common/ContactIcon/ContactIcon";
 
-const MainInfo = (props) => {
-    const classMainInfo = props.isScrollPage ? `${styles.mainInfo} ${styles.mainInfoScroll}` : styles.mainInfo;
-    const classFlower = props.isScrollPage ? `${styles.flower} ${styles.flowerScroll}` : styles.flower;
+const MainInfo = () => {
     const icons = [
         {icon: faLinkedinIn, link: 'https://www.linkedin.com/'},
         {icon:faTelegram, link: 'https://t-do.ru/@BaVlaG'},
@@ -21,7 +19,7 @@ const MainInfo = (props) => {
         {icon:faVk, link: 'https://vk.com/id161148807'}
     ];
     const images = [
-        {url: flower, class: classFlower},
+        {url: flower, class: styles.flower},
         {url: tablet, class: styles.tablet},
         {url: pen, class: styles.pen},
         {url: papers, class: styles.papers},
@@ -31,7 +29,7 @@ const MainInfo = (props) => {
         {url: paperclip, class: styles.paperclip_2}
         ];
     return (
-        <div className={classMainInfo} id={'main'}>
+        <div className={styles.mainInfo} id={'main'}>
             { images.map( (image, i) => <img key={i} src={image.url} alt={image.class} className={image.class}/>)}
             <div className={styles.container}>
                 <Roll left cascade delay={500}>

@@ -1,4 +1,6 @@
 .header {
+    position: fixed;
+    z-index: 5;
     background-color: #dfdfdf;
     height: 70px;
     width: 100%;
@@ -9,9 +11,6 @@
 
 .headerBlack {
     background-color: #000000;
-    position: fixed;
-    z-index: 5;
-    transition: .5s;
 }
 
 .container{

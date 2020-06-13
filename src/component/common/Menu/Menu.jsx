@@ -11,11 +11,11 @@ const Menu = (props) => {
                                           key={i}
                                           activeClass={styles.active}
                                           to={s.toLowerCase()}
-                                          spy={true}  //invalid select link at scrolling
+                                          spy={true}
                                           smooth={true}
-                                          offset={-150}
-                                          duration={1000}>{s}</Link>)
-            }
+                                          offset={-170}
+                                          duration={1000}>{s}</Link>
+            )}
         </>
     )
 };
