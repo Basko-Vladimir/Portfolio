@@ -2,14 +2,13 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    height: calc(100vh - 70px);
+    height: 100vh;
     background-color: #dfdfdf;
     background-size: cover;
 }
 
 .mainInfo img {
     position: absolute;
-    z-index: 2;
 }
 
 .mainInfo .flower {
@@ -230,7 +229,7 @@
     background-image: url('../../images/I.jpg');
     background-size: cover;
     backface-visibility: hidden;
-    z-index: 2;
+    z-index: 5;
 }
 
 .mainInfo .container .photo:after {
@@ -246,6 +245,7 @@
 
 .mainInfo .container .backSide {
     position: absolute;
+    z-index: 3;
     width: 292px;
     height: 392px;
     top: 0;

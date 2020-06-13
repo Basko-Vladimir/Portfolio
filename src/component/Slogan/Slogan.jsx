@@ -9,7 +9,7 @@ const Slogan = () => {
         <div className={styles.slogan} id={'cooperation'}>
             <Fade bottom>
                 <div className={styles.container}>
-                    <Link to={'contacts'} smooth={true} duration={1000}>
+                    <Link to={'contacts'} smooth={true} offset={-120} duration={1000}>
                         <Button btnName={'Hire me'}/>
                     </Link>
                     <div className={styles.sloganText}>
