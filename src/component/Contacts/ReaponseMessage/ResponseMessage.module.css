@@ -1,0 +1,15 @@
+.success p, .error p {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+
+}
+
+.success p{
+    color: #232323;
+}
+
+.error p{
+    color: red;
+}

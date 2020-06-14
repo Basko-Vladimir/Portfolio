@@ -1,4 +1,5 @@
 .contacts {
+    position: relative;
     background-image: url('http://wpdemos.themezaa.com/pofo/wp-content/uploads/2017/06/homepage-option15-bg.jpg');
     background-size: cover;
     min-height: 60vh;
@@ -12,6 +13,21 @@
     width:75%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.contacts .container .messageBlock {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 200px;
+    background-color: #F7F7F7;
+    border: 4px double #373737;
+    box-shadow: 0 0 50px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 @media screen and (max-width: 1440px){
