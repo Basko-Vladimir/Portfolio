@@ -33,6 +33,10 @@
     opacity: 1;
 }
 
+.projectsItem .wrapPhoto .btnWrap a{
+    text-decoration: none;
+}
+
 .projectsItem .projectDescription{
     margin-top: 20px;
     position: relative;
