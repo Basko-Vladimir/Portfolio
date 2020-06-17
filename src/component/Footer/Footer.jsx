@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Footer.module.css";
+import styles from "./Footer.module.scss";
 import HeaderBlock from "../common/HeaderBlock/HeaderBlock";
 import Fade from 'react-reveal/Fade';
 import {faVk, faLinkedinIn, faTelegram, faGithub} from '@fortawesome/fontawesome-free-brands';
