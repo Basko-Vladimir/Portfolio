@@ -174,39 +174,6 @@
     margin:50px 0 0 250px;
 }
 
-.mainInfo .container .greeting {
-    font-size: 1.2em;
-    line-height: 1.6;
-    font-weight: 600;
-    text-align: left;
-    color: #232323;
-    align-self: flex-start;
-    margin-top: 200px;
-}
-
-.mainInfo .container .greeting div:nth-child(2) {
-    font-family: Montserrat, sans-serif;
-    font-size: 1.8em;
-    position: relative;
-    z-index: 1;
-}
-
-.mainInfo .container .greeting div:nth-child(2):after {
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    bottom: 6px;
-    width: 273px;
-    height: 15px;
-    content: '';
-    background-color: #ff214f;
-}
-
-.mainInfo .container .greeting h1 {
-    font-size: 1.5em;
-    margin: 0;
-}
-
 .mainInfo .container .photoBlock {
     margin-top: 100px;
     perspective: 1000px;
@@ -411,24 +378,10 @@
         }
     }
 
-
     .mainInfo .container {
-        max-width: 65%;
+        max-width: 70%;
         margin-left: 150px;
         justify-content: space-around;
-    }
-
-    .mainInfo .container .greeting {
-        font-size: 1em;
-        line-height: 1.5;
-        margin-top: 150px;
-    }
-
-    .mainInfo .container .greeting div:nth-child(2):after {
-        right: -2px;
-        bottom: 4px;
-        width: 231px;
-        height: 12px;
     }
 
     .mainInfo .container .photo {
@@ -458,11 +411,10 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .mainInfo .flower, .mainInfo,
-    .mainInfo .tablet, .mainInfo .pen,
-    .mainInfo .papers, .mainInfo .red_marker,
-    .mainInfo .black_marker, .mainInfo .paperclip_1,
-    .mainInfo .paperclip_2 {
+    .mainInfo .flower, .mainInfo .tablet,
+    .mainInfo .pen, .mainInfo .papers,
+    .mainInfo .red_marker, .mainInfo .black_marker,
+    .mainInfo .paperclip_1, .mainInfo .paperclip_2 {
         display: none;
     }
 
@@ -474,16 +426,6 @@
         width: 80%;
         justify-content: space-between;
         margin: 50px auto;
-    }
-
-    .mainInfo .container .greeting {
-        font-size: 0.85em;
-        line-height: 1.4;
-    }
-
-    .mainInfo .container .greeting div:nth-child(2):after {
-        width: 197px;
-        height: 10px;
     }
 
     .mainInfo .container .photo {
@@ -525,18 +467,6 @@
         align-content: center;
     }
 
-    .mainInfo .container .greeting {
-        align-self: center;
-        margin-top: 150px;
-    }
-
-    .mainInfo .container .greeting div:nth-child(2):after {
-        width: 194px;
-        height: 9px;
-        right: -1px;
-        bottom: 3px;
-    }
-
     .mainInfo .container .photoBlock:hover .rotate {
         transform: none;
     }
@@ -576,28 +506,6 @@
     .mainInfo .container {
         max-width: 90%;
         height: 90%;
-    }
-
-    .mainInfo .container .greeting {
-        margin-top: 50px;
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: center;
-    }
-
-    .mainInfo .container .greeting div:nth-child(2){
-        font-size: 1.5em;
-    }
-
-    .mainInfo .container .greeting div:nth-child(2):after {
-        width: 189px;
-        height: 9px;
-        right: 0;
-        bottom: 6px;
-    }
-
-    .mainInfo .container .greeting h1{
-        font-size: 1.3em;
     }
 
     .mainInfo .container .rotate {

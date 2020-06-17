@@ -1,0 +1,7 @@
+
+@mixin coralLineSettings ($right, $bottom, $width, $height) {
+    right: $right;
+    bottom: $bottom;
+    width:  $width;
+    height:  $height;
+}

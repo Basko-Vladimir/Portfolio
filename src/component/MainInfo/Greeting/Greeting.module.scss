@@ -1,0 +1,98 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+@import '../../../styles/mixins';
+
+.greeting {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 600;
+    text-align: left;
+    color: $darkFont;
+    align-self: flex-start;
+    margin-top: 200px;
+    div:nth-child(2) {
+        font-family: $Montserrat;
+        font-size: 35px;
+        position: relative;
+        z-index: 1;
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            background-color: $coral;
+            @include coralLineSettings(0, 6px, 275px, 15px);
+        }
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1440px), (min-device-aspect-ratio: 16/9) {
+    .greeting {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 150px;
+        div:nth-child(2) {
+            font-size: 32px;
+            &:after {
+                @include coralLineSettings(-2px, 7px, 253px, 12px);
+            }
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .greeting {
+        line-height: 1.4;
+        div:nth-child(2) {
+            font-size: 28px;
+            &:after {
+                @include coralLineSettings(-2px, 4px, 222px, 10px);
+            }
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .greeting {
+        align-self: center;
+        margin-top: 100px;
+        div:nth-child(2) {
+            font-size: 25px;
+            &:after {
+                @include coralLineSettings(-1px, 4px, 197px, 9px);
+            }
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .greeting {
+        line-height: 1.6;
+        div:nth-child(2){
+            font-size: 22px;
+            &:after{
+                display: none;
+            }
+        }
+
+        h1{
+            font-size: 20px;
+        }
+    }
+}

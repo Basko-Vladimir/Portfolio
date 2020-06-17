@@ -7,9 +7,10 @@ import papers from "../../images/papers.png";
 import red_marker from "../../images/red_marker.png";
 import black_marker from "../../images/black_marker.png";
 import paperclip from "../../images/paperclip.png";
-import {Roll, Bounce} from "react-reveal";
+import {Bounce} from "react-reveal";
 import {faVk, faLinkedinIn, faTelegram, faGithub} from '@fortawesome/fontawesome-free-brands';
 import ContactIcon from "../common/ContactIcon/ContactIcon";
+import Greeting from './Greeting/Greeting';
 
 const MainInfo = () => {
     const icons = [
@@ -32,13 +33,7 @@ const MainInfo = () => {
         <div className={styles.mainInfo} id={'main'}>
             { images.map( (image, i) => <img key={i} src={image.url} alt={image.class} className={image.class}/>)}
             <div className={styles.container}>
-                <Roll left cascade delay={500}>
-                    <div className={styles.greeting}>
-                        <div>Hi, There!</div>
-                        <div>I am Basko Vladimir</div>
-                        <h1>Я front-end developer</h1>
-                    </div>
-                </Roll>
+                <Greeting />
                 <Bounce top delay={1500} duration={1000} >
                     <div className={styles.photoBlock}>
                         <div className={styles.rotate}>
