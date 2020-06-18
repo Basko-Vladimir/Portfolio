@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "../Skills.module.css";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import styles from '../Skills.module.scss';
+import Fade from 'react-reveal/Fade';
 
 const SkillItem = (props) => {
     return (
