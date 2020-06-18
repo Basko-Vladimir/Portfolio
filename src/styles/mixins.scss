@@ -5,3 +5,27 @@
     width:  $width;
     height:  $height;
 }
+
+@mixin blockSizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin animation ($name, $rotStart, $rotEnd, $sides,  $horStart, $verStart, $horEnd, $verEnd) {
+    @keyframes #{$name} {
+        from {
+            @if $sides == TR {top: $verStart; right: $horStart;};
+            @if $sides == BR {bottom: $verStart; right: $horStart;};
+            @if $sides == BL {bottom: $verStart; left: $horStart;};
+            transform: rotate($rotStart);
+        }
+        to {
+            @if $sides == TR {top: $verEnd; right: $horEnd;};
+            @if $sides == BR {bottom: $verEnd; right: $horEnd;};
+            @if $sides == BL {bottom: $verEnd; left: $horEnd;};
+            transform: rotate($rotEnd);
+        }
+    }
+}
+
+

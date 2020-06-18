@@ -1,0 +1,182 @@
+@import '../../styles/colors.scss';
+@import '../../styles/fonts.scss';
+@import '../../styles/mixins.scss';
+
+.mainInfo {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 100vh;
+    background-color: $mainInfoBG;
+    background-size: cover;
+
+    img {
+        position: absolute;
+    }
+
+    .flower {
+        top: 150px;
+        right: -175px;
+        transform: rotate(230deg);
+        animation: moveFlower 2s;
+        @include animation(moveFlower, 310deg, 230deg, TR, -400px, -200px, -175px, 150px);
+    }
+
+    .tablet {
+        right: -250px;
+        bottom: -100px;
+        animation: moveTablet 2s;
+        @include animation(moveTablet, -60deg, 0, BR, -500px, -300px, -250px, -100px);
+    }
+
+    .pen {
+        right: 360px;
+        bottom: 0;
+        animation: movePen 2s;
+        @include animation(movePen, -100deg, 0, BR, 500px, -300px, 360px, 0);
+    }
+
+    .papers {
+        bottom: -450px;
+        left: -350px;
+        transform: rotate(280deg);
+        animation: movePapers 2s;
+        @include animation(movePapers, 360deg, 280deg, BL, -1000px, 0, -350px, -450px);
+    }
+
+    .red_marker {
+        bottom: -100px;
+        left: 200px;
+        animation: moveRed_marker ease-in-out 2.5s;
+        @include animation(moveRed_marker, 90deg, 0, BL, 200px, -700px, 200px, -100px);
+    }
+
+    .black_marker {
+        bottom: 180px;
+        left: 140px;
+        animation: moveBlack_marker ease-in-out 2.5s;
+        @include animation(moveBlack_marker, -180deg, 0, BL, -500px, 0, 140px, 180px);
+    }
+
+    .paperclip_1 {
+        bottom: 200px;
+        left: 600px;
+        animation: moveClip_1 2s;
+        @include animation(moveClip_1, 45deg, 0, BL, 700px, -200px, 600px, 200px);
+    }
+
+    .paperclip_2 {
+        bottom: 170px;
+        left: 660px;
+        transform: rotate(55deg);
+        animation: moveClip_2 2.5s;
+        @include animation(moveClip_2, 90deg, 55deg, BL, 1000px, -300px, 660px, 170px);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 60%;
+        margin: 50px 0 0 250px;
+    }
+}
+
+@media screen and (max-width: 1440px), (min-device-aspect-ratio: 16/9) {
+    .mainInfo {
+        .flower {
+            width: 450px;
+            right: -130px;
+            @include animation(moveFlower, 310deg, 230deg, TR, -400px, -200px, -130px, 150px);
+        }
+
+        .tablet {
+            width: 600px;
+            right: -220px;
+            bottom: -120px;
+            @include animation(moveTablet, -60deg, 0, BR, -500px, -300px, -220px, -120px);
+        }
+
+        .pen {
+            width: 280px;
+            right: 290px;
+            bottom: -90px;
+            @include animation(movePen, -100deg, 0, BR, 500px, -300px, 290px, -90px);
+        }
+
+        .papers {
+            width: 800px;
+            bottom: -400px;
+            left: -310px;
+            @include animation(movePapers, 360deg, 280deg, BL, -1000px, 0, -310px, -400px);
+        }
+
+        .red_marker {
+            width: 270px;
+        }
+
+        .black_marker {
+            width: 190px;
+            bottom: 140px;
+            left: 110px;
+            @include animation(moveBlack_marker, -180deg, 0, BL, -500px, 0, 110px, 140px);
+        }
+
+        .paperclip_1 {
+            width: 45px;
+            bottom: 120px;
+            left: 510px;
+            @include animation(moveClip_1, 45deg, 0, BL, 700px, -200px, 510px, 120px);
+        }
+
+        .paperclip_2 {
+            width: 46px;
+            bottom: 100px;
+            left: 560px;
+            @include animation(moveClip_2, 90deg, 55deg, BL, 1000px, -300px, 560px, 100px);
+        }
+
+        .container {
+            max-width: 70%;
+            margin-left: 150px;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .mainInfo {
+        height: 70vh;
+
+        .flower, .tablet, .pen, .papers, .red_marker,
+        .black_marker, .paperclip_1, .paperclip_2 {
+            display: none;
+        }
+
+        .container {
+            width: 80%;
+            justify-content: space-between;
+            margin: 50px auto;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .mainInfo .container {
+        max-width: 90%;
+        height: 80%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .mainInfo {
+        height: 600px;
+
+        .container {
+            max-width: 90%;
+            height: 90%;
+        }
+    }
+}

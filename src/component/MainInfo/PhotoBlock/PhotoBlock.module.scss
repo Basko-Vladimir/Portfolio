@@ -1,0 +1,156 @@
+@import '../../../styles/fonts';
+@import '../../../styles/colors';
+@import '../../../styles/mixins';
+
+.photoBlock {
+    margin-top: 100px;
+    perspective: 1000px;
+
+    &:hover .rotate {
+        transform: rotateY(180deg);
+    }
+
+    .rotate {
+        position: relative;
+        transition: 1.5s;
+        transform-style: preserve-3d;
+
+        .photo {
+            position: relative;
+            background-image: url('../../../images/I.jpg');
+            background-size: cover;
+            backface-visibility: hidden;
+            z-index: 5;
+            @include blockSizes(300px, 400px);
+
+            &:after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                top: -17px;
+                left: 15px;
+                border: 7px solid $coral;
+                @include blockSizes(290px, 420px);
+            }
+        }
+
+        .backSide {
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            left: 0;
+            transform: rotateY(180deg);
+            border: 4px double $photoBackBorder;
+            background-color: $photoBackBG;
+            backface-visibility: hidden;
+            @include blockSizes(292px, 392px);
+
+            h2 {
+                margin: 70px 0 30px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            .contactsIcon {
+                margin: 0 auto;
+                width: 60%;
+                font-size: 30px;
+                color: $darkFont;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px), (min-device-aspect-ratio: 16/9) {
+    .photoBlock .rotate {
+        .photo {
+            @include blockSizes(250px, 335px);
+
+            &:after {
+                @include blockSizes(240px, 355px);
+            }
+        }
+
+        .backSide {
+            position: absolute;
+            @include blockSizes(242px, 327px);
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .contactsIcon {
+                width: 60%;
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .photoBlock .rotate {
+        .photo {
+            @include blockSizes(220px, 295px);
+
+            &:after {
+                @include blockSizes(210px, 315px);
+            }
+        }
+
+        .backSide {
+            position: absolute;
+            @include blockSizes(212px, 287px);
+
+            h2 {
+                margin-top: 50px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .contactsIcon {
+                width: 60%;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .photoBlock {
+        &:hover .rotate {
+            transform: none;
+        }
+
+        .rotate .photo {
+            align-self: center;
+            @include blockSizes(250px, 335px);
+
+            &:after {
+                @include blockSizes(240px, 355px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .photoBlock {
+        margin: 60px auto 100px;
+
+        .rotate .photo {
+            align-self: center;
+            @include blockSizes(220px, 295px);
+
+            &:after {
+                @include blockSizes(207px, 315px);
+            }
+        }
+    }
+}
