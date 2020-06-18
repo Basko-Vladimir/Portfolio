@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./Header.module.css";
-import NavMenu from "./NavMenu/NavMenu";
-import MobileNavMenu from "./MobileNavMenu/MobileNavMenu";
+import React from 'react';
+import styles from './Header.module.scss';
+import NavMenu from './NavMenu/NavMenu';
+import MobileNavMenu from './MobileNavMenu/MobileNavMenu';
 
 const Header = (props) => {
     let classHeader = props.isScrollPage ? `${styles.header} ${styles.headerBlack}` : styles.header;

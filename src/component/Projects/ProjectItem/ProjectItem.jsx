@@ -1,27 +1,13 @@
-import React from "react";
-import styles from "./ProjectItem.module.css";
-import Button from "../../common/Button/Button";
+import React from 'react';
+import styles from './ProjectItem.module.scss';
+import ProjectPhoto from './ProjectPhoto/ProjectPhoto';
+import ProjectDescription from './ProjectDescription/ProjectDecription';
 
 const ProjectItem = (props) => {
     return (
         <div className={styles.projectsItem}>
-            <div className={styles.wrapPhoto}>
-                <img src={props.url} alt={props.projectName} className={styles.photoProject}/>
-                <div className={styles.btnWrap}>
-                    <a href={props.link} target="_blank" rel="noreferrer noopener">
-                        <Button btnName={'See'}/>
-                    </a>
-                </div>
-            </div>
-            <div className={styles.projectDescription}>
-                <div className={styles.descriptionBlock}>
-                    <div className={styles.projectName}>{props.title}</div>
-                    <div className={styles.aboutProject}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Consequatur dolor magni modi quibusdam vel! Dolore?
-                    </div>
-                </div>
-            </div>
+            <ProjectPhoto url={props.url} projectName={props.projectName} link={props.link}/>
+            <ProjectDescription title={props.title}/>
         </div>
     )
 };

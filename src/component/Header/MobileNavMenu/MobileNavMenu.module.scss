@@ -1,0 +1,47 @@
+@import '../../../styles/colors';
+
+.mobileNavMenu {
+    position: relative;
+    display: none;
+    cursor: pointer;
+
+    img {
+        width: 30px;
+    }
+
+    .mobileMenu {
+        position: absolute;
+        z-index: 2;
+        top: 53px;
+        left: -114px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        background-color: $mainInfoBG;
+
+        & a:hover {
+            background-color: $darkFont;
+        }
+    }
+
+    .mobileMenuBlack {
+        background-color: $footerHeaderBG;
+    }
+
+    .mobileMenu a,
+    .mobileMenuBlack a {
+        justify-self: auto;
+        width: 100%;
+        text-align: left;
+        height: 100%;
+        padding: 8px 0 0 20px;
+        border-bottom: 1px solid $photoBackBG;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .mobileNavMenu {
+        display: block;
+    }
+}

@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./MobileNavMenu.module.css";
-import lightMenu from "../../../images/lightMenu.png";
-import darkMenu from "../../../images/darkMenu.png";
-import Menu from "../../common/Menu/Menu";
+import React from 'react';
+import styles from './MobileNavMenu.module.scss';
+import lightMenu from '../../../images/lightMenu.png';
+import darkMenu from '../../../images/darkMenu.png';
+import Menu from '../../common/Menu/Menu';
 
 class MobileNavMenu extends React.Component {
     state = {
@@ -15,17 +15,18 @@ class MobileNavMenu extends React.Component {
         })
     };
 
-
     render() {
         let mobileMenu = this.props.isScrollPage ? lightMenu : darkMenu;
-        let classMobileMenu = this.props.isScrollPage ? `${styles.mobileMenu} ${styles.mobileMenuBlack}` : styles.mobileMenu;
+        let classMobileMenu = this.props.isScrollPage
+            ? `${styles.mobileMenu} ${styles.mobileMenuBlack}`
+            : styles.mobileMenu;
         return (
             <div className={styles.mobileNavMenu}>
                 <img src={mobileMenu} alt="NavMenu" onClick={this.isToggleMenu}/>
                 {
-                    this.state.isVisible && <div className={classMobileMenu} >
-                                                <Menu isScrollPage={this.props.isScrollPage}/>
-                                            </div>
+                    this.state.isVisible && <div className={classMobileMenu}>
+                        <Menu isScrollPage={this.props.isScrollPage}/>
+                    </div>
                 }
             </div>
         )

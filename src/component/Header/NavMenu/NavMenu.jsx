@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./NavMenu.module.css"
-import Menu from "../../common/Menu/Menu";
+import React from 'react';
+import styles from './NavMenu.module.scss'
+import Menu from '../../common/Menu/Menu';
 
 const NavMenu = (props) => {
     return (
