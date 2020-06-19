@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f4400bf1.chunk.css",
-    "main.js": "/Portfolio/static/js/main.bd766ed9.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.bd766ed9.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.d7d6f167.chunk.css",
+    "main.js": "/Portfolio/static/js/main.695df952.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.695df952.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e1c49509.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e1c49509.js.map",
     "static/css/2.51b93fa0.chunk.css": "/Portfolio/static/css/2.51b93fa0.chunk.css",
-    "static/js/2.88a72689.chunk.js": "/Portfolio/static/js/2.88a72689.chunk.js",
-    "static/js/2.88a72689.chunk.js.map": "/Portfolio/static/js/2.88a72689.chunk.js.map",
+    "static/js/2.ba9d3022.chunk.js": "/Portfolio/static/js/2.ba9d3022.chunk.js",
+    "static/js/2.ba9d3022.chunk.js.map": "/Portfolio/static/js/2.ba9d3022.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.e57cbf4f5d58e5f0be6f96c498fa9ac1.js": "/Portfolio/precache-manifest.e57cbf4f5d58e5f0be6f96c498fa9ac1.js",
+    "precache-manifest.67a408fe5399bb977d250267814c6964.js": "/Portfolio/precache-manifest.67a408fe5399bb977d250267814c6964.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.51b93fa0.chunk.css.map": "/Portfolio/static/css/2.51b93fa0.chunk.css.map",
-    "static/css/main.f4400bf1.chunk.css.map": "/Portfolio/static/css/main.f4400bf1.chunk.css.map",
-    "static/js/2.88a72689.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.88a72689.chunk.js.LICENSE.txt",
+    "static/css/main.d7d6f167.chunk.css.map": "/Portfolio/static/css/main.d7d6f167.chunk.css.map",
+    "static/js/2.ba9d3022.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.ba9d3022.chunk.js.LICENSE.txt",
     "static/media/Counter.png": "/Portfolio/static/media/Counter.f758dfa4.png",
     "static/media/PhotoBlock.module.scss": "/Portfolio/static/media/I.cdd6952e.jpg",
     "static/media/black_marker.png": "/Portfolio/static/media/black_marker.05788d61.png",
@@ -32,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.e1c49509.js",
     "static/css/2.51b93fa0.chunk.css",
-    "static/js/2.88a72689.chunk.js",
-    "static/css/main.f4400bf1.chunk.css",
-    "static/js/main.bd766ed9.chunk.js"
+    "static/js/2.ba9d3022.chunk.js",
+    "static/css/main.d7d6f167.chunk.css",
+    "static/js/main.695df952.chunk.js"
   ]
 }
