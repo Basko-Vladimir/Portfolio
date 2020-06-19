@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './MyContacts.module.css';
+import styles from './MyContacts.module.scss';
 import HeaderBlock from '../../common/HeaderBlock/HeaderBlock';
 import InfoItem from './InfoItem/InfoItem';
 import {Bounce} from 'react-reveal';
@@ -17,9 +17,9 @@ const MyContacts = () => {
                     <HeaderBlock headerName={'My contacts'}/>
                 </div>
                 <div className={styles.infoItemsWrap}>
-                    { infoItems.map ( (item, i) => <InfoItem key={i}
-                                                             header={item.header}
-                                                             content={item.content} />)}
+                    {infoItems.map((item, i) => <InfoItem key={i}
+                                                          header={item.header}
+                                                          content={item.content}/>)}
                 </div>
             </div>
         </Bounce>

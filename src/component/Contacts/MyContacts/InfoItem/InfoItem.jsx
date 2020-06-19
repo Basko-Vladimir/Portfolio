@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./InfoItem.module.css";
+import React from 'react';
+import styles from './InfoItem.module.scss';
 
 const InfoItem = (props) => {
     return (

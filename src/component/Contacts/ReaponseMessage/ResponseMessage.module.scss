@@ -1,0 +1,29 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+
+.success p, .error p {
+    font-family: $Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.success p {
+    color: $darkFont;
+}
+
+.error p {
+    color: red;
+}
+
+@media screen and (max-width: 760px) {
+    .success p, .error p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .success p, .error p {
+        font-size: 13px;
+    }
+}

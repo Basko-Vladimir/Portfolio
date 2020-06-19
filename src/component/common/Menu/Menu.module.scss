@@ -1,0 +1,24 @@
+@import '../../../styles/fonts';
+@import '../../../styles/colors';
+
+.link {
+    text-decoration: none;
+    color: $darkFont;
+    font-family: $Montserrat;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        color: $photoBackBorder;
+    }
+}
+
+.active {
+    border-bottom: 3px solid $coral;
+}
+
+.linkBlack {
+    color: $white;
+}

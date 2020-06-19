@@ -1,0 +1,32 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+
+.headerBlock {
+    margin-bottom: 50px;
+
+    span {
+        font-family: $Montserrat;
+        font-size: 1.4em;
+        font-weight: 500;
+        padding: 0 10px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 2.5%;
+            height: 10px;
+            width: 95%;
+            background-color: $coral;
+            z-index: -1;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .headerBlock {
+        margin-bottom: 25px;
+    }
+}
+

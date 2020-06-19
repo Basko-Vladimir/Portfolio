@@ -1,9 +1,0 @@
-.contactIcon{
-    cursor: pointer;
-    transition: .3s;
-    color: inherit;
-}
-
-.contactIcon:hover{
-    color: #FE214E;
-}

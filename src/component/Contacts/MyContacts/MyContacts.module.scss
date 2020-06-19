@@ -1,0 +1,42 @@
+@import '../../../styles/colors';
+
+.contactsBlock {
+    width: 30%;
+    text-align: left;
+
+    .headerBlockWrap {
+        font-size: 20px;
+        color: $white;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .contactsBlock {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .contactsBlock {
+        width: 100%;
+        text-align: center;
+
+        .headerBlockWrap {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .infoItemsWrap {
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+
+
+
+

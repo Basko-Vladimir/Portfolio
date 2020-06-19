@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './FormikForm.module.css';
+import styles from './FormikForm.module.scss';
 import {Bounce} from 'react-reveal';
 import Button from '../../common/Button/Button';
 import {Form, Formik} from 'formik';
@@ -11,9 +11,7 @@ const FormikForm = (props) => {
         props.sendMessage(messageData);
         resetForm()
     };
-
     const initialValues = {name: '', email: '', message: ''};
-
     const validationSchema = Yup.object({
         name: Yup.string().required('This field is required'),
         email: Yup.string()
@@ -21,6 +19,7 @@ const FormikForm = (props) => {
             .required('This field is required'),
         message: Yup.string().required('This field is required')
     });
+
     return (
         <Bounce right duration={2000}>
             <div className={styles.formBlock}>

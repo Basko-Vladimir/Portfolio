@@ -1,10 +1,13 @@
 import React from 'react';
-import styles from './ContactIcon.module.css';
+import styles from './ContactIcon.module.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 function ContactIcon(props) {
-    return <a href={props.link} target="_blank" rel="noreferrer noopener" className={styles.contactIcon}>
-        <FontAwesomeIcon icon={props.iconType} />
+    return <a href={props.link}
+              target="_blank"
+              rel="noreferrer noopener"
+              className={styles.contactIcon}>
+        <FontAwesomeIcon icon={props.iconType}/>
     </a>
 }
 

@@ -28,4 +28,10 @@
     }
 }
 
+@mixin sizePozMessage ($width, $height) {
+    width: $width;
+    height: $height;
+    top: calc(50% - #{$height / 2});
+    left: calc(50% - #{$width / 2});
+}
 

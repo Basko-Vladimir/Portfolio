@@ -1,0 +1,12 @@
+@import '../../../styles/colors.scss';
+
+.contactIcon {
+    cursor: pointer;
+    transition: .3s;
+    color: inherit;
+
+    &:hover {
+        color: $coral;
+    }
+}
+
