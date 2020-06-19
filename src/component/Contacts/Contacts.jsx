@@ -10,16 +10,16 @@ import Button from '../common/Button/Button';
 const Contacts = (props) => {
     const closeMessageResponse = () => {
         props.setStatus(null);
-        props.setIsLoading(false);
     };
+
     return (
         <div className={styles.contacts} id={'contacts'}>
             <div className={styles.container}>
                 <MyContacts/>
-                <FormikForm isLoading={props.isLoading} sendMessage={props.sendMessage}/>
+                <FormikForm sendMessage={props.sendMessage}/>
                 {props.requestStatus && <div className={styles.messageBlock}>
                     <ResponseMessage requestStatus={props.requestStatus}/>
-                    <Button onClickFunction={closeMessageResponse} btnName={'Close'}> </Button>
+                    <Button onClickFunction={closeMessageResponse} btnName={'Close'}/>
                 </div>
                 }
             </div>
@@ -30,7 +30,6 @@ const Contacts = (props) => {
 const mapStateToProps = (state) => {
     return {
         requestStatus: state.portfolio.requestStatus,
-        isLoading: state.portfolio.isLoading
     }
 };
 

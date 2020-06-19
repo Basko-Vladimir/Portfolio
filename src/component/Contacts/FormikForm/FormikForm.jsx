@@ -31,7 +31,7 @@ const FormikForm = (props) => {
                         {createField('text', 'email', styles.inputs, styles.error, 'E-mail')}
                         {createField('textarea', 'message', styles.textArea, styles.error, 'Enter your message...')}
                         <div className={styles.btnWrap}>
-                            <Button btnName={'Submit'} isDisabled={props.isLoading}/>
+                            <Button btnName={'Submit'}/>
                         </div>
                     </Form>
                 </Formik>

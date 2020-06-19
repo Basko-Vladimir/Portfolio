@@ -29,9 +29,16 @@ export const setStatus = (status) => ({type: SET_STATUS, status});
 export const setIsLoading = (isLoading) => ({type: SET_IS_LOADING, isLoading});
 
 export const sendMessage =  (messageData) => async (dispatch) => {
-    dispatch(setIsLoading(true));
-    const response = await api.sendMessage(messageData);
-    dispatch(setStatus(response.status));
+   try {
+       dispatch(setIsLoading(true));
+       const response = await api.sendMessage(messageData);
+       dispatch(setStatus(response.status));
+       dispatch(setIsLoading(false));
+   } catch (err) {
+       dispatch(setStatus(404));
+       dispatch(setIsLoading(false));
+       console.error(err)
+   }
 };
 
 export default portfolioReducer;
