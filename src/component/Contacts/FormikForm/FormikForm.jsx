@@ -27,9 +27,9 @@ const FormikForm = (props) => {
                         validationSchema={validationSchema}
                         onSubmit={sendMessage}>
                     <Form className={styles.form}>
-                        {createField('text', 'name', styles.inputs, styles.error, 'Name')}
-                        {createField('text', 'email', styles.inputs, styles.error, 'E-mail')}
-                        {createField('textarea', 'message', styles.textArea, styles.error, 'Enter your message...')}
+                        {createField('text', 'name', styles.inputs, 'Name')}
+                        {createField('text', 'email', styles.inputs, 'E-mail')}
+                        {createField('textarea', 'message', styles.textArea, 'Enter your message...')}
                         <div className={styles.btnWrap}>
                             <Button btnName={'Submit'}/>
                         </div>

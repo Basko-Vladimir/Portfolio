@@ -124,6 +124,8 @@
 
 @media screen and (max-width: 760px) {
     .photoBlock {
+        margin: 60px auto 100px;
+
         &:hover .rotate {
             transform: none;
         }
@@ -140,17 +142,13 @@
 }
 
 @media screen and (max-width: 360px) {
+    .photoBlock .rotate .photo {
+        align-self: center;
 
-    .photoBlock {
-        margin: 60px auto 100px;
+        @include blockSizes(220px, 295px);
 
-        .rotate .photo {
-            align-self: center;
-            @include blockSizes(220px, 295px);
-
-            &:after {
-                @include blockSizes(207px, 315px);
-            }
+        &:after {
+            @include blockSizes(207px, 315px);
         }
     }
 }

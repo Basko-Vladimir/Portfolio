@@ -16,11 +16,9 @@ function SliderBox() {
         centerMode: true,
         infinite: true,
         centerPadding: 0,
-        slidesToShow: window.innerWidth < 760 ? 2 : 3,
+        slidesToShow: window.innerWidth < 760 ? 1 : window.innerWidth < 1100 ? 2 : 3,
         speed: 500,
-        dots: !(window.innerWidth < 760),
-        vertical: window.innerWidth < 760,
-        verticalSwiping: window.innerWidth < 760,
+        dots: window.innerWidth > 760
     };
     const projects = [
         {title: 'Social Network', url: socNet, link: 'https://github.com/Basko-Vladimir/IT-incubator-social-network'},
