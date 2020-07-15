@@ -6,10 +6,7 @@ const ProjectDescription = (props) => {
         <div className={styles.projectDescription}>
             <div className={styles.description}>
                 <div className={styles.projectName}>{props.title}</div>
-                <div className={styles.aboutProject}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consequatur dolor magni modi quibusdam vel! Dolore?
-                </div>
+                <div className={styles.aboutProject}>{props.description}</div>
             </div>
         </div>
     )

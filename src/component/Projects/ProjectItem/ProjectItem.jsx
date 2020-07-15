@@ -7,7 +7,7 @@ const ProjectItem = (props) => {
     return (
         <div className={styles.projectsItem}>
             <ProjectPhoto url={props.url} projectName={props.projectName} link={props.link}/>
-            <ProjectDescription title={props.title}/>
+            <ProjectDescription title={props.title} description={props.projectDescription}/>
         </div>
     )
 };

@@ -6,7 +6,7 @@ import {faGithub, faLinkedinIn, faTelegram, faVk} from '@fortawesome/fontawesome
 
 const PhotoBlock = () => {
     const icons = [
-        {icon: faLinkedinIn, link: 'https://www.linkedin.com/'},
+        {icon: faLinkedinIn, link: 'https://www.linkedin.com/in/vladimir-basko-38198b137/'},
         {icon: faTelegram, link: 'https://t-do.ru/@BaVlaG'},
         {icon: faGithub, link: 'https://github.com/Basko-Vladimir'},
         {icon: faVk, link: 'https://vk.com/id161148807'}
