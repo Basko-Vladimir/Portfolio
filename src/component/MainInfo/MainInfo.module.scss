@@ -93,15 +93,15 @@
         .tablet {
             width: 600px;
             right: -220px;
-            bottom: -120px;
-            @include animation(moveTablet, -60deg, 0, BR, -500px, -300px, -220px, -120px);
+            bottom: -140px;
+            @include animation(moveTablet, -60deg, 0, BR, -500px, -300px, -220px, -140px);
         }
 
         .pen {
             width: 280px;
             right: 290px;
-            bottom: -90px;
-            @include animation(movePen, -100deg, 0, BR, 500px, -300px, 290px, -90px);
+            bottom: -120px;
+            @include animation(movePen, -100deg, 0, BR, 500px, -300px, 290px, -120px);
         }
 
         .papers {
@@ -146,7 +146,7 @@
 
 @media screen and (max-width: 1100px) {
     .mainInfo {
-        height: 70vh;
+        height: 80vh;
 
         .flower, .tablet, .pen, .papers, .red_marker,
         .black_marker, .paperclip_1, .paperclip_2 {
@@ -162,11 +162,15 @@
 }
 
 @media screen and (max-width: 760px) {
-    .mainInfo .container {
-        max-width: 90%;
-        height: 80%;
-        flex-direction: column;
-        justify-content: space-around;
+    .mainInfo {
+        height: 90vh;
+
+        .container {
+            max-width: 90%;
+            height: 80%;
+            flex-direction: column;
+            justify-content: space-around;
+        }
     }
 }
 
