@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8827368f5daa11e16bd3406a9f5e197",
+    "revision": "9f93d691a89c70bb76e0ff58da09985f",
     "url": "/Portfolio/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/css/2.51b93fa0.chunk.css"
   },
   {
-    "revision": "99b58d3279eeb3a74e82",
-    "url": "/Portfolio/static/css/main.5a5a9abd.chunk.css"
+    "revision": "ede5559c5bab54e50d51",
+    "url": "/Portfolio/static/css/main.ff611301.chunk.css"
   },
   {
     "revision": "ee32155c1f63ad3a0b02",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/js/2.4abc0679.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "99b58d3279eeb3a74e82",
-    "url": "/Portfolio/static/js/main.f8f4bd09.chunk.js"
+    "revision": "ede5559c5bab54e50d51",
+    "url": "/Portfolio/static/js/main.f90b8686.chunk.js"
   },
   {
     "revision": "654ea12aa83236a26bec",
@@ -32,12 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/Counter.f758dfa4.png"
   },
   {
-    "revision": "cdd6952e4eb5860ba1cf79b139cb98bc",
-    "url": "/Portfolio/static/media/I.cdd6952e.jpg"
+    "revision": "7d42c4d80593885b6181c236780bb60b",
+    "url": "/Portfolio/static/media/I.7d42c4d8.jpg"
   },
   {
     "revision": "05788d618c4531762cbdd1f27793db7d",
     "url": "/Portfolio/static/media/black_marker.05788d61.png"
+  },
+  {
+    "revision": "82fb5c3fdfc917d13a05743c24b8c620",
+    "url": "/Portfolio/static/media/cards.82fb5c3f.png"
   },
   {
     "revision": "db39eb3bcbe5a0079686dbaa669a8429",
@@ -54,10 +58,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4538509a8bae455ac08e793c951d8252",
     "url": "/Portfolio/static/media/pen.4538509a.png"
-  },
-  {
-    "revision": "f7f5fbee962b1446507cfda543616ecc",
-    "url": "/Portfolio/static/media/portfolio.f7f5fbee.png"
   },
   {
     "revision": "6a85d455168b6f178ffb2d8098689752",
