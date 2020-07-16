@@ -33,7 +33,7 @@ function SliderBox() {
             projectDescription: 'This application let to create  different todo list. Its created using TypeScript,' +
                 ' React, redux etc. (in progress)'
         },
-        {title: 'Training cards (in progress)', url: cards, link: 'https://basko-vladimir.github.io/Portfolio/',
+        {title: 'Training cards (in progress)', url: cards, link: 'https://basko-vladimir.github.io/Friday-project/',
             projectDescription: 'This application is training simulator. You have to create ' +
                 'your account and then you can create training cards with questions, answers and evaluate them.' +
                 ' In this project use TypeScript, React, Redux, Scss and other technologies. (in progress) '
